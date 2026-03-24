@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Analítico CR | Lado Bom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="app-container">
+        <!-- Sidebar Tabs -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="lado-bom-seguros-documentacao-logo.svg" alt="Lado Bom Seguros" class="brand-logo lb-logo">
+                <div class="logo-divider"></div>
+                <img src="crédito real logo.png" alt="Crédito Real" class="brand-logo cr-logo">
+            </div>
+
+            <nav class="tabs-nav">
+                <div class="tab-item active" data-tab="Geral">Visão Geral</div>
+                <div class="tab-item" data-tab="Vida">Vida</div>
+                <div class="tab-item" data-tab="Conteúdo">Conteúdo</div>
+                <div class="tab-item" data-tab="Condomínio">Condomínio</div>
+                <div class="tab-item" data-tab="Fiança">Fiança</div>
+                <div class="tab-item" data-tab="Capitalização">Capitalização</div>
+                <div class="tab-item" data-tab="Imobiliário">Imobiliário</div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <header class="top-header">
+                <div class="header-titles">
+                    <h1 id="page-title">Visão Geral</h1>
+                    <p id="page-subtitle">Desempenho consolidado de todos os produtos core.</p>
+                </div>
+                
+                <div class="global-filters">
+                    <div class="filter-group interval-group">
+                        <label>Período</label>
+                        <div class="interval-selects">
+                            <select id="filter-start-month" class="premium-select"></select>
+                            <span class="to-label">até</span>
+                            <select id="filter-end-month" class="premium-select"></select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filter-metric">Métrica</label>
+                        <select id="filter-metric" class="premium-select">
+                            <option value="pr_total" selected>Prêmio Total</option>
+                            <option value="vl_com_corretora">Comissão</option>
+                            <option value="valor_repasse">Repasse</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <div class="kpi-grid">
+                <div class="kpi-card highlight">
+                    <div class="kpi-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="kpi-data">
+                        <p class="kpi-label">Fechamento Acumulado</p>
+                        <h2 id="kpi-total">R$ 0</h2>
+                    </div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <div class="kpi-data">
+                        <p class="kpi-label">Média do Período</p>
+                        <h2 id="kpi-avg">R$ 0</h2>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <div class="kpi-data">
+                        <p class="kpi-label">Pico de Faturamento</p>
+                        <h2 id="kpi-best-month">-</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Area -->
+            <div class="analytics-row">
+                <!-- Time Series -->
+                <div class="chart-box main-time-box">
+                    <h3 id="main-chart-title">Evolução Mensal Geral</h3>
+                    <div class="chart-container">
+                        <canvas id="mainChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stacked Bar (Only visible in Visão Geral) -->
+            <div class="analytics-row" id="stacked-chart-row">
+                <div class="chart-box main-time-box">
+                    <h3>Composição Mensal de Produtos (Core)</h3>
+                    <div class="chart-container" style="min-height: 380px;">
+                        <canvas id="stackedChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Area: Split into 3 columns for charts (replacing insights) -->
+            <div class="analytics-row bottom-row grid-3">
+                <div class="chart-box secondary-chart-v3">
+                    <h3 id="comp-title">Composição Total</h3>
+                    <div class="chart-container">
+                        <canvas id="compositionChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-box secondary-chart-v3 span-2">
+                    <h3 id="rank-title">Desempenho por Ramo</h3>
+                    <div class="chart-container">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

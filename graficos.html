@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Produção - Core</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .chart-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            background: #FFFFFF;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 500px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="chart-wrapper">
+        <div class="chart-container">
+            <canvas id="stackedChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const formatCurrencyK = (value) => {
+            if (value === 0) return 'R$ 0';
+            return 'R$ ' + (value / 1000).toFixed(0) + 'K';
+        };
+
+        const formatCurrencyFull = (value) => {
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(value);
+        };
+
+        const branchColors = {
+            'Vida': '#00AFA3',
+            'Conteúdo': '#6B6B6B',
+            'Condomínio': '#2D7C9D',
+            'Fiança': '#7C45CB',
+            'Capitalização': '#F57A00',
+            'Imobiliário': '#5A3182'
+        };
+
+        Chart.defaults.color = '#333333';
+        Chart.defaults.font.family = "'Inter', sans-serif";
+
+        async function initIsolatedChart() {
+            try {
+                const response = await fetch('isolated_data.json');
+                const data = await response.json();
+                
+                const ctx = document.getElementById('stackedChart').getContext('2d');
+                
+                // data.datasets comes in order: Imobiliário, Capitalização, Fiança, Condomínio, Conteúdo, Vida
+                // which draws Imobiliário at bottom, Vida at top. Perfect for stacking.
+                
+                // For the legend however, the image shows Vida on top, then Conteúdo, etc. 
+                // Chart.js legend order matches dataset order by default.
+                // To match the image legend (reverse order visually):
+                const datasetKeys = Object.keys(data.datasets);
+                
+                const datasets = datasetKeys.map(branch => {
+                    return {
+                        label: branch,
+                        data: data.datasets[branch],
+                        backgroundColor: branchColors[branch],
+                        borderWidth: 0,
+                        barPercentage: 0.6, // thinner bars like in the image
+                        categoryPercentage: 0.8
+                    };
+                });
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.labels, // Years
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false,
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'right',
+                                reverse: true, // Legend reads Vida first, matching the image
+                                labels: {
+                                    usePointStyle: false,
+                                    boxWidth: 16,
+                                    boxHeight: 16,
+                                    padding: 24,
+                                    font: {
+                                        size: 13
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        if (context.raw > 0) {
+                                            return context.dataset.label + ': ' + formatCurrencyFull(context.raw);
+                                        }
+                                        return null; 
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                stacked: true,
+                                grid: {
+                                    display: false,
+                                    drawBorder: true
+                                },
+                                ticks: {
+                                    font: { size: 13 }
+                                }
+                            },
+                            y: {
+                                stacked: true,
+                                grid: {
+                                    color: '#E0E0E0',
+                                    drawBorder: false
+                                },
+                                border: {
+                                    display: false
+                                },
+                                ticks: {
+                                    stepSize: 100000,
+                                    callback: function(value) {
+                                        return formatCurrencyK(value);
+                                    },
+                                    font: { size: 13 }
+                                }
+                            }
+                        }
+                    }
+                });
+
+            } catch (err) {
+                console.error("Failed to load chart", err);
+            }
+        }
+
+        initIsolatedChart();
+    </script>
+</body>
+</html>
