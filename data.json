@@ -1,887 +1,5 @@
 [
   {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 49387.2,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2241.7464999999997,
-    "pr_liquido": 45691.77
-  },
-  {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 9572.5,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1503.3725,
-    "pr_liquido": 8912.35
-  },
-  {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Engenharia",
-    "pr_total": 402.68,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 26.25,
-    "pr_liquido": 375.0
-  },
-  {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Fiança",
-    "pr_total": 243578.86,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 13023.2725,
-    "pr_liquido": 226838.21
-  },
-  {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 185747.65,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 43493.33,
-    "pr_liquido": 172046.53
-  },
-  {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Residencial",
-    "pr_total": 5972.83,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 420.952,
-    "pr_liquido": 5562.33
-  },
-  {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 536.96,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 500.06
-  },
-  {
-    "year": "2022",
-    "month": "01",
-    "ramo_decoded": "Vida",
-    "pr_total": 142803.44999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 31212.810000000005,
-    "pr_liquido": 142262.85
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 19786.239999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 730.2785,
-    "pr_liquido": 18426.37
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 4656.5599999999995,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 429.877,
-    "pr_liquido": 4311.7699999999995
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Engenharia",
-    "pr_total": 0.01,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.01
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Fiança",
-    "pr_total": 208007.75,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 15904.147,
-    "pr_liquido": 193704.83
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 298401.34,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 73092.26,
-    "pr_liquido": 277227.63
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Residencial",
-    "pr_total": 1493.6299999999999,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 67.32249999999999,
-    "pr_liquido": 1390.97
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2022",
-    "month": "02",
-    "ramo_decoded": "Vida",
-    "pr_total": 30026.629999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6565.935,
-    "pr_liquido": 29912.96
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 40220.56,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2062.8825,
-    "pr_liquido": 37359.94
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 9225.56,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 865.263,
-    "pr_liquido": 8128.74
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Engenharia",
-    "pr_total": 402.7,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 26.25,
-    "pr_liquido": 375.02
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 909.76,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 59.307500000000005,
-    "pr_liquido": 847.24
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Fiança",
-    "pr_total": 202625.34,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 13367.3225,
-    "pr_liquido": 188931.6
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 345891.95,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 83331.04,
-    "pr_liquido": 321398.9
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Residencial",
-    "pr_total": 5970.46,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 353.8815,
-    "pr_liquido": 5511.82
-  },
-  {
-    "year": "2022",
-    "month": "03",
-    "ramo_decoded": "Vida",
-    "pr_total": 28754.719999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6284.56,
-    "pr_liquido": 28645.86
-  },
-  {
-    "year": "2022",
-    "month": "04",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 44390.340000000004,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1639.6555,
-    "pr_liquido": 40367.93
-  },
-  {
-    "year": "2022",
-    "month": "04",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 24537.239999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1903.3525,
-    "pr_liquido": 22734.19
-  },
-  {
-    "year": "2022",
-    "month": "04",
-    "ramo_decoded": "Fiança",
-    "pr_total": 292237.08,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 21913.6225,
-    "pr_liquido": 272152.36
-  },
-  {
-    "year": "2022",
-    "month": "04",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 499029.27999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 124139.46,
-    "pr_liquido": 463514.72
-  },
-  {
-    "year": "2022",
-    "month": "04",
-    "ramo_decoded": "Residencial",
-    "pr_total": 2292.04,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 101.584,
-    "pr_liquido": 2121.21
-  },
-  {
-    "year": "2022",
-    "month": "04",
-    "ramo_decoded": "Vida",
-    "pr_total": 28623.609999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6258.4400000000005,
-    "pr_liquido": 28515.25
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 44926.86,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2080.428,
-    "pr_liquido": 41257.51
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 15730.57,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1235.024,
-    "pr_liquido": 14649.44
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 603.92,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 39.368,
-    "pr_liquido": 562.41
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Fiança",
-    "pr_total": 227549.37,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 16462.929,
-    "pr_liquido": 211910.47
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 354204.31,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 79321.92,
-    "pr_liquido": 328291.96
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Residencial",
-    "pr_total": 4834.17,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 321.41200000000003,
-    "pr_liquido": 4459.94
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 14671.66,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 478.2155,
-    "pr_liquido": 13663.31
-  },
-  {
-    "year": "2022",
-    "month": "05",
-    "ramo_decoded": "Vida",
-    "pr_total": 2002.14,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 125.881,
-    "pr_liquido": 2053.9700000000003
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 33191.08,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1401.9180000000001,
-    "pr_liquido": 30665.56
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 15466.43,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1534.456,
-    "pr_liquido": 14403.46
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 851.75,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 27.762,
-    "pr_liquido": 793.21
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Fiança",
-    "pr_total": 269184.9,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 20312.0435,
-    "pr_liquido": 250684.48
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Garantias",
-    "pr_total": 13860.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 13860.0
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 289094.02,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 71005.965,
-    "pr_liquido": 266190.68
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Residencial",
-    "pr_total": 6377.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 465.402,
-    "pr_liquido": 5760.67
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 1088.09,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 35.4655,
-    "pr_liquido": 1013.31
-  },
-  {
-    "year": "2022",
-    "month": "06",
-    "ramo_decoded": "Vida",
-    "pr_total": 213.26,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 42.49,
-    "pr_liquido": 212.45
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 43241.18,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1550.4125,
-    "pr_liquido": 40170.89
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Cyber",
-    "pr_total": 21743.38,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1417.43,
-    "pr_liquido": 20249.0
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 16765.68,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1086.6799999999998,
-    "pr_liquido": 15613.41
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Fiança",
-    "pr_total": 180005.86000000002,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 13597.468499999999,
-    "pr_liquido": 167634.5
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Garantias",
-    "pr_total": 4158.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 4158.0
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 352137.9,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 84397.5,
-    "pr_liquido": 326141.18
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Residencial",
-    "pr_total": 7315.29,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 539.0805,
-    "pr_liquido": 6812.52
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 22344.26,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 728.301,
-    "pr_liquido": 20808.59
-  },
-  {
-    "year": "2022",
-    "month": "07",
-    "ramo_decoded": "Vida",
-    "pr_total": 463.34999999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 59.4965,
-    "pr_liquido": 461.59
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 75388.11,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2751.1715,
-    "pr_liquido": 70031.67
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 17249.97,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1088.7169999999999,
-    "pr_liquido": 16064.41
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Engenharia",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 1608.73,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 91.97300000000001,
-    "pr_liquido": 1498.17
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Fiança",
-    "pr_total": 286261.68,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 20249.4145,
-    "pr_liquido": 266555.01
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Garantias",
-    "pr_total": 3279.04,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 244.419,
-    "pr_liquido": 3266.63
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 349244.21,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 85868.0,
-    "pr_liquido": 323469.14
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Residencial",
-    "pr_total": 10851.14,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 605.269,
-    "pr_liquido": 10077.11
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 595.54,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 38.822,
-    "pr_liquido": 554.61
-  },
-  {
-    "year": "2022",
-    "month": "08",
-    "ramo_decoded": "Vida",
-    "pr_total": 1644.63,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 131.096,
-    "pr_liquido": 1638.4099999999999
-  },
-  {
-    "year": "2022",
-    "month": "09",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 15052.86,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 624.89,
-    "pr_liquido": 13851.12
-  },
-  {
-    "year": "2022",
-    "month": "09",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 22424.82,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1595.3139999999999,
-    "pr_liquido": 20840.68
-  },
-  {
-    "year": "2022",
-    "month": "09",
-    "ramo_decoded": "Fiança",
-    "pr_total": 213366.41,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 13889.0745,
-    "pr_liquido": 198379.07
-  },
-  {
-    "year": "2022",
-    "month": "09",
-    "ramo_decoded": "Garantias",
-    "pr_total": 1826.1100000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 152.94299999999998,
-    "pr_liquido": 1819.1999999999998
-  },
-  {
-    "year": "2022",
-    "month": "09",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 318776.8,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 78931.2,
-    "pr_liquido": 295261.6
-  },
-  {
-    "year": "2022",
-    "month": "09",
-    "ramo_decoded": "Residencial",
-    "pr_total": 7267.280000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 427.1435,
-    "pr_liquido": 6389.35
-  },
-  {
-    "year": "2022",
-    "month": "09",
-    "ramo_decoded": "Vida",
-    "pr_total": 693.74,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 75.99549999999999,
-    "pr_liquido": 691.0999999999999
-  },
-  {
-    "year": "2022",
-    "month": "10",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 31139.7,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1336.013,
-    "pr_liquido": 28795.42
-  },
-  {
-    "year": "2022",
-    "month": "10",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 6812.83,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 245.7665,
-    "pr_liquido": 6344.6
-  },
-  {
-    "year": "2022",
-    "month": "10",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 1464.54,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 74.1755,
-    "pr_liquido": 1363.88
-  },
-  {
-    "year": "2022",
-    "month": "10",
-    "ramo_decoded": "Fiança",
-    "pr_total": 449505.69,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 26561.0975,
-    "pr_liquido": 418548.79
-  },
-  {
-    "year": "2022",
-    "month": "10",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 346849.92,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 82940.72,
-    "pr_liquido": 322342.53
-  },
-  {
-    "year": "2022",
-    "month": "10",
-    "ramo_decoded": "Residencial",
-    "pr_total": 2964.17,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 96.61749999999999,
-    "pr_liquido": 2760.4500000000003
-  },
-  {
-    "year": "2022",
-    "month": "10",
-    "ramo_decoded": "Vida",
-    "pr_total": 1471.18,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 86.2085,
-    "pr_liquido": 1461.5900000000001
-  },
-  {
-    "year": "2022",
-    "month": "11",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 71274.51,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2785.3735,
-    "pr_liquido": 65531.65
-  },
-  {
-    "year": "2022",
-    "month": "11",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 10460.97,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1358.6125,
-    "pr_liquido": 9697.67
-  },
-  {
-    "year": "2022",
-    "month": "11",
-    "ramo_decoded": "Fiança",
-    "pr_total": 297357.66,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 20058.934,
-    "pr_liquido": 276799.88
-  },
-  {
-    "year": "2022",
-    "month": "11",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 262844.88,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 67808.845,
-    "pr_liquido": 244059.12
-  },
-  {
-    "year": "2022",
-    "month": "11",
-    "ramo_decoded": "Residencial",
-    "pr_total": 11088.730000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 574.3534999999999,
-    "pr_liquido": 10273.130000000001
-  },
-  {
-    "year": "2022",
-    "month": "11",
-    "ramo_decoded": "Vida",
-    "pr_total": 1261.11,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 115.56299999999999,
-    "pr_liquido": 1256.3300000000002
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 53304.38,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1986.6735,
-    "pr_liquido": 48140.06
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 90000.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1102.5,
-    "pr_liquido": 90000.0
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 26966.74,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2046.6005,
-    "pr_liquido": 25113.38
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 185.83,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 12.1135,
-    "pr_liquido": 173.06
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Fiança",
-    "pr_total": 305535.16000000003,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 21672.42,
-    "pr_liquido": 284239.23
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 281566.25,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 70929.285,
-    "pr_liquido": 261363.03
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Residencial",
-    "pr_total": 11277.8,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 605.8325,
-    "pr_liquido": 10386.72
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Viagem",
-    "pr_total": 201.48,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 10.5385,
-    "pr_liquido": 200.74
-  },
-  {
-    "year": "2022",
-    "month": "12",
-    "ramo_decoded": "Vida",
-    "pr_total": 725.48,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 55.566,
-    "pr_liquido": 714.05
-  },
-  {
-    "year": "2023",
-    "month": "01",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 70247.88,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2393.811,
-    "pr_liquido": 64127.45
-  },
-  {
-    "year": "2023",
-    "month": "01",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 5950102.45,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 76254.1955,
-    "pr_liquido": 5950102.45
-  },
-  {
     "year": "2023",
     "month": "01",
     "ramo_decoded": "Condomínio",
@@ -894,136 +12,19 @@
     "year": "2023",
     "month": "01",
     "ramo_decoded": "Empresarial",
-    "pr_total": 25016.71,
+    "pr_total": 6545.21,
     "vl_com_corretora": 609.54,
-    "valor_repasse": 1224.5775,
-    "pr_liquido": 23297.37
-  },
-  {
-    "year": "2023",
-    "month": "01",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 251.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 16.3625,
-    "pr_liquido": 233.75
-  },
-  {
-    "year": "2023",
-    "month": "01",
-    "ramo_decoded": "Fiança",
-    "pr_total": 246377.12,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 14640.906,
-    "pr_liquido": 229141.5
-  },
-  {
-    "year": "2023",
-    "month": "01",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 327233.93,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 81850.235,
-    "pr_liquido": 303690.38
-  },
-  {
-    "year": "2023",
-    "month": "01",
-    "ramo_decoded": "Residencial",
-    "pr_total": 12333.779999999999,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 403.63750000000005,
-    "pr_liquido": 11352.25
-  },
-  {
-    "year": "2023",
-    "month": "01",
-    "ramo_decoded": "Vida",
-    "pr_total": 2687.54,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 460.53000000000003,
-    "pr_liquido": 2677.36
-  },
-  {
-    "year": "2023",
-    "month": "02",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 31335.649999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1113.5985,
-    "pr_liquido": 28148.29
+    "valor_repasse": 213.34,
+    "pr_liquido": 6095.37
   },
   {
     "year": "2023",
     "month": "02",
     "ramo_decoded": "Condomínio",
-    "pr_total": 41593.44,
-    "vl_com_corretora": 4135.99,
-    "valor_repasse": 2068.01,
-    "pr_liquido": 38710.95
-  },
-  {
-    "year": "2023",
-    "month": "02",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 5623.41,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 159.887,
-    "pr_liquido": 5232.74
-  },
-  {
-    "year": "2023",
-    "month": "02",
-    "ramo_decoded": "Engenharia",
-    "pr_total": 536.88,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 69.9965,
-    "pr_liquido": 499.98
-  },
-  {
-    "year": "2023",
-    "month": "02",
-    "ramo_decoded": "Fiança",
-    "pr_total": 542275.74,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 20944.2135,
-    "pr_liquido": 505840.97
-  },
-  {
-    "year": "2023",
-    "month": "02",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 376482.23,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 96995.12,
-    "pr_liquido": 350450.14
-  },
-  {
-    "year": "2023",
-    "month": "02",
-    "ramo_decoded": "Residencial",
-    "pr_total": 21759.800000000003,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3776.647,
-    "pr_liquido": 20264.28
-  },
-  {
-    "year": "2023",
-    "month": "02",
-    "ramo_decoded": "Vida",
-    "pr_total": 31225.62,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6530.304999999999,
-    "pr_liquido": 31107.41
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 25742.23,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1041.852,
-    "pr_liquido": 23440.54
+    "pr_total": 23327.48,
+    "vl_com_corretora": 2501.62,
+    "valor_repasse": 1250.82,
+    "pr_liquido": 21730.32
   },
   {
     "year": "2023",
@@ -1036,81 +37,9 @@
   },
   {
     "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 12908.57,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1017.926,
-    "pr_liquido": 12021.39
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Equipamentos",
-    "pr_total": 248.64,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7.1715,
-    "pr_liquido": 204.89
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Fiança",
-    "pr_total": 293473.13,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 19440.4735,
-    "pr_liquido": 273130.32
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Garantias",
-    "pr_total": 963.65,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 84.0,
-    "pr_liquido": 960.0
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 544555.01,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 157443.01499999998,
-    "pr_liquido": 505362.46
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Residencial",
-    "pr_total": 3006.2799999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 123.2105,
-    "pr_liquido": 2799.66
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 20053.14,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 701.8585,
-    "pr_liquido": 20053.14
-  },
-  {
-    "year": "2023",
-    "month": "03",
-    "ramo_decoded": "Vida",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2023",
     "month": "04",
     "ramo_decoded": "Condomínio",
-    "pr_total": 234108.77,
+    "pr_total": 224332.82,
     "vl_com_corretora": 29255.49,
     "valor_repasse": 14627.95,
     "pr_liquido": 207641.75
@@ -1119,7 +48,7 @@
     "year": "2023",
     "month": "04",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 141577.82,
+    "pr_total": 110661.12999999999,
     "vl_com_corretora": 61833.38,
     "valor_repasse": 30916.71,
     "pr_liquido": 103055.62
@@ -1127,89 +56,35 @@
   {
     "year": "2023",
     "month": "04",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 0.01,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.01
-  },
-  {
-    "year": "2023",
-    "month": "04",
-    "ramo_decoded": "Fiança",
-    "pr_total": 7275.860000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 458.017,
-    "pr_liquido": 6839.219999999999
-  },
-  {
-    "year": "2023",
-    "month": "04",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 553679.2,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 144917.965,
-    "pr_liquido": 515311.24
-  },
-  {
-    "year": "2023",
-    "month": "04",
     "ramo_decoded": "Viagem",
-    "pr_total": 2584.38,
+    "pr_total": 1292.19,
     "vl_com_corretora": 387.66,
-    "valor_repasse": 271.361,
-    "pr_liquido": 2584.38
+    "valor_repasse": 135.68,
+    "pr_liquido": 1292.19
   },
   {
     "year": "2023",
     "month": "04",
     "ramo_decoded": "Vida",
-    "pr_total": 68485.36,
-    "vl_com_corretora": 12970.71,
-    "valor_repasse": 12970.715,
-    "pr_liquido": 61765.3
-  },
-  {
-    "year": "2023",
-    "month": "05",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 2098.6,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 102.606,
-    "pr_liquido": 1954.37
-  },
-  {
-    "year": "2023",
-    "month": "05",
-    "ramo_decoded": "Condomínio",
-    "pr_total": 215153.18,
-    "vl_com_corretora": 26847.56,
-    "valor_repasse": 13423.95,
-    "pr_liquido": 185896.95
-  },
-  {
-    "year": "2023",
-    "month": "05",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 119603.78,
-    "vl_com_corretora": 52217.25,
-    "valor_repasse": 26108.64,
-    "pr_liquido": 87069.43
-  },
-  {
-    "year": "2023",
-    "month": "05",
-    "ramo_decoded": "Vida",
-    "pr_total": 37485.36,
+    "pr_total": 31000.0,
     "vl_com_corretora": 12970.71,
     "valor_repasse": 6485.36,
     "pr_liquido": 30882.65
   },
   {
     "year": "2023",
+    "month": "05",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 57097.56,
+    "vl_com_corretora": 6733.68,
+    "valor_repasse": 3366.87,
+    "pr_liquido": 53066.52
+  },
+  {
+    "year": "2023",
     "month": "06",
     "ramo_decoded": "Condomínio",
-    "pr_total": 151022.3,
+    "pr_total": 142248.64,
     "vl_com_corretora": 18636.55,
     "valor_repasse": 9318.42,
     "pr_liquido": 130917.22
@@ -1217,71 +92,17 @@
   {
     "year": "2023",
     "month": "06",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 30566.94,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2023",
-    "month": "06",
-    "ramo_decoded": "Fiança",
-    "pr_total": 4726.639999999999,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 378.8715,
-    "pr_liquido": 4401.79
-  },
-  {
-    "year": "2023",
-    "month": "06",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 373149.99,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 98910.52,
-    "pr_liquido": 345630.92
-  },
-  {
-    "year": "2023",
-    "month": "06",
-    "ramo_decoded": "Residencial",
-    "pr_total": 1271.3200000000002,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 48.733999999999995,
-    "pr_liquido": 1138.79
-  },
-  {
-    "year": "2023",
-    "month": "06",
     "ramo_decoded": "Vida",
-    "pr_total": 68485.36,
+    "pr_total": 31000.0,
     "vl_com_corretora": 12970.71,
-    "valor_repasse": 12970.715,
-    "pr_liquido": 61765.3
-  },
-  {
-    "year": "2023",
-    "month": "07",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 1333.9,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 65.2155,
-    "pr_liquido": 1242.22
-  },
-  {
-    "year": "2023",
-    "month": "07",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 43988.69,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 461.881,
-    "pr_liquido": 43988.69
+    "valor_repasse": 6485.36,
+    "pr_liquido": 30882.65
   },
   {
     "year": "2023",
     "month": "07",
     "ramo_decoded": "Condomínio",
-    "pr_total": 193323.35,
+    "pr_total": 177431.82,
     "vl_com_corretora": 21435.15,
     "valor_repasse": 10717.73,
     "pr_liquido": 164124.06
@@ -1290,79 +111,25 @@
     "year": "2023",
     "month": "07",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 136594.71,
+    "pr_total": 106791.44,
     "vl_com_corretora": 59670.24,
     "valor_repasse": 29835.17,
     "pr_liquido": 99451.86
   },
   {
     "year": "2023",
-    "month": "07",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 2002.58,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 163.184,
-    "pr_liquido": 1864.95
-  },
-  {
-    "year": "2023",
-    "month": "07",
-    "ramo_decoded": "Fiança",
-    "pr_total": 71044.94,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4649.113,
-    "pr_liquido": 66162.18
-  },
-  {
-    "year": "2023",
-    "month": "07",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 394607.58999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 104966.94499999999,
-    "pr_liquido": 366393.47
-  },
-  {
-    "year": "2023",
-    "month": "07",
-    "ramo_decoded": "Vida",
-    "pr_total": 68539.78,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 14338.865,
-    "pr_liquido": 68280.33
-  },
-  {
-    "year": "2023",
-    "month": "08",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 6178.09,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 296.5655,
-    "pr_liquido": 5753.48
-  },
-  {
-    "year": "2023",
-    "month": "08",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 303007.51,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3305.9809999999998,
-    "pr_liquido": 303007.51
-  },
-  {
-    "year": "2023",
     "month": "08",
     "ramo_decoded": "Condomínio",
-    "pr_total": 300167.41,
-    "vl_com_corretora": 33993.15,
-    "valor_repasse": 16996.79,
-    "pr_liquido": 262559.37
+    "pr_total": 265095.77999999997,
+    "vl_com_corretora": 30970.27,
+    "valor_repasse": 15485.34,
+    "pr_liquido": 245995.92
   },
   {
     "year": "2023",
     "month": "08",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 213963.41,
+    "pr_total": 183969.73,
     "vl_com_corretora": 102795.52,
     "valor_repasse": 51397.83,
     "pr_liquido": 171325.87
@@ -1370,89 +137,35 @@
   {
     "year": "2023",
     "month": "08",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 6187.5,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 367.696,
-    "pr_liquido": 5751.03
-  },
-  {
-    "year": "2023",
-    "month": "08",
     "ramo_decoded": "Equipamentos",
-    "pr_total": 719.52,
+    "pr_total": 359.76,
     "vl_com_corretora": 33.5,
-    "valor_repasse": 23.455,
-    "pr_liquido": 670.06
-  },
-  {
-    "year": "2023",
-    "month": "08",
-    "ramo_decoded": "Fiança",
-    "pr_total": 65082.23,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4359.2815,
-    "pr_liquido": 60545.66
-  },
-  {
-    "year": "2023",
-    "month": "08",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 376416.13,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 100971.215,
-    "pr_liquido": 348817.86
-  },
-  {
-    "year": "2023",
-    "month": "08",
-    "ramo_decoded": "Residencial",
-    "pr_total": 1318.22,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 70.68950000000001,
-    "pr_liquido": 1227.63
+    "valor_repasse": 11.73,
+    "pr_liquido": 335.03
   },
   {
     "year": "2023",
     "month": "08",
     "ramo_decoded": "Vida",
-    "pr_total": 151418.43,
+    "pr_total": 68539.78,
     "vl_com_corretora": 28677.73,
-    "valor_repasse": 28677.735,
-    "pr_liquido": 136560.66
-  },
-  {
-    "year": "2023",
-    "month": "09",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 3018.2,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 139.69549999999998,
-    "pr_liquido": 2810.76
-  },
-  {
-    "year": "2023",
-    "month": "09",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 474610.33,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6611.549,
-    "pr_liquido": 474610.33
+    "valor_repasse": 14338.869999999999,
+    "pr_liquido": 68280.33
   },
   {
     "year": "2023",
     "month": "09",
     "ramo_decoded": "Condomínio",
-    "pr_total": 198617.33000000002,
-    "vl_com_corretora": 21157.63,
-    "valor_repasse": 10578.98,
-    "pr_liquido": 170126.82
+    "pr_total": 182646.93,
+    "vl_com_corretora": 20776.06,
+    "valor_repasse": 10388.19,
+    "pr_liquido": 168854.92
   },
   {
     "year": "2023",
     "month": "09",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 134955.53,
+    "pr_total": 105484.97,
     "vl_com_corretora": 58941.13,
     "valor_repasse": 29470.62,
     "pr_liquido": 98235.20999999999
@@ -1461,88 +174,25 @@
     "year": "2023",
     "month": "09",
     "ramo_decoded": "Empresarial",
-    "pr_total": 19424.78,
+    "pr_total": 9712.39,
     "vl_com_corretora": 1537.81,
-    "valor_repasse": 1076.4635,
-    "pr_liquido": 18089.76
-  },
-  {
-    "year": "2023",
-    "month": "09",
-    "ramo_decoded": "Fiança",
-    "pr_total": -3567.84,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 914.655,
-    "pr_liquido": -4278.300000000001
-  },
-  {
-    "year": "2023",
-    "month": "09",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 719868.5499999999,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 196536.18,
-    "pr_liquido": 669747.16
-  },
-  {
-    "year": "2023",
-    "month": "09",
-    "ramo_decoded": "Residencial",
-    "pr_total": 663.9200000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 46.536,
-    "pr_liquido": 586.74
-  },
-  {
-    "year": "2023",
-    "month": "09",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 67493.9,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 23622.865,
-    "pr_liquido": 67493.9
-  },
-  {
-    "year": "2023",
-    "month": "09",
-    "ramo_decoded": "Vida",
-    "pr_total": 77524.51000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 16218.515,
-    "pr_liquido": 77231.03
-  },
-  {
-    "year": "2023",
-    "month": "10",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 13863.64,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 517.153,
-    "pr_liquido": 12910.82
-  },
-  {
-    "year": "2023",
-    "month": "10",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 311645.45,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3887.569,
-    "pr_liquido": 311645.45
+    "valor_repasse": 538.23,
+    "pr_liquido": 9044.88
   },
   {
     "year": "2023",
     "month": "10",
     "ramo_decoded": "Condomínio",
-    "pr_total": 275326.72,
-    "vl_com_corretora": 31825.01,
-    "valor_repasse": 15912.720000000001,
-    "pr_liquido": 240791.66
+    "pr_total": 251555.24,
+    "vl_com_corretora": 30684.2,
+    "valor_repasse": 15342.31,
+    "pr_liquido": 233867.93
   },
   {
     "year": "2023",
     "month": "10",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 159488.08,
+    "pr_total": 131877.35,
     "vl_com_corretora": 73547.17,
     "valor_repasse": 36773.67,
     "pr_liquido": 122813.68000000001
@@ -1550,161 +200,53 @@
   {
     "year": "2023",
     "month": "10",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 495.4,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 40.369,
-    "pr_liquido": 461.35
-  },
-  {
-    "year": "2023",
-    "month": "10",
-    "ramo_decoded": "Fiança",
-    "pr_total": 221721.88,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 16379.0375,
-    "pr_liquido": 205529.11
-  },
-  {
-    "year": "2023",
-    "month": "10",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 583131.33,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 170436.205,
-    "pr_liquido": 541651.47
-  },
-  {
-    "year": "2023",
-    "month": "10",
     "ramo_decoded": "Residencial",
-    "pr_total": 6656.1,
+    "pr_total": 2949.19,
     "vl_com_corretora": 274.65,
-    "valor_repasse": 229.305,
-    "pr_liquido": 6198.639999999999
-  },
-  {
-    "year": "2023",
-    "month": "10",
-    "ramo_decoded": "Vida",
-    "pr_total": 59992.13,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 12550.654999999999,
-    "pr_liquido": 59765.020000000004
-  },
-  {
-    "year": "2023",
-    "month": "11",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 27078.2,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 990.052,
-    "pr_liquido": 25355.09
-  },
-  {
-    "year": "2023",
-    "month": "11",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 359669.13,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4721.241,
-    "pr_liquido": 359669.13
+    "valor_repasse": 96.13,
+    "pr_liquido": 2746.5
   },
   {
     "year": "2023",
     "month": "11",
     "ramo_decoded": "Condomínio",
-    "pr_total": 204120.58,
-    "vl_com_corretora": 22259.3,
-    "valor_repasse": 11129.77,
-    "pr_liquido": 175137.8
+    "pr_total": 186561.46,
+    "vl_com_corretora": 22076.16,
+    "valor_repasse": 11038.2,
+    "pr_liquido": 173306.44
   },
   {
     "year": "2023",
     "month": "11",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 103113.95999999999,
-    "vl_com_corretora": 40522.81,
-    "valor_repasse": 28552.23,
+    "pr_total": 74561.78,
+    "vl_com_corretora": 57104.35,
+    "valor_repasse": 20261.46,
     "pr_liquido": 67537.95
   },
   {
     "year": "2023",
     "month": "11",
     "ramo_decoded": "Empresarial",
-    "pr_total": 12049.33,
+    "pr_total": 2752.06,
     "vl_com_corretora": 828.28,
-    "valor_repasse": 793.127,
-    "pr_liquido": 11221.189999999999
-  },
-  {
-    "year": "2023",
-    "month": "11",
-    "ramo_decoded": "Fiança",
-    "pr_total": 209642.88999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 14340.0705,
-    "pr_liquido": 195124.13
-  },
-  {
-    "year": "2023",
-    "month": "11",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 586987.97,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 157014.81,
-    "pr_liquido": 541486.73
-  },
-  {
-    "year": "2023",
-    "month": "11",
-    "ramo_decoded": "Viagem",
-    "pr_total": 351.66,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 24.619,
-    "pr_liquido": 351.66
-  },
-  {
-    "year": "2023",
-    "month": "11",
-    "ramo_decoded": "Vida",
-    "pr_total": 104388.25,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 21838.54,
-    "pr_liquido": 103993.06
-  },
-  {
-    "year": "2023",
-    "month": "12",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 5937.4800000000005,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 256.9945,
-    "pr_liquido": 5529.4
-  },
-  {
-    "year": "2023",
-    "month": "12",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 77227.53,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1311.632,
-    "pr_liquido": 77227.53
+    "valor_repasse": 289.89,
+    "pr_liquido": 2562.91
   },
   {
     "year": "2023",
     "month": "12",
     "ramo_decoded": "Condomínio",
-    "pr_total": 173216.76,
-    "vl_com_corretora": 20244.79,
-    "valor_repasse": 10122.5,
-    "pr_liquido": 151768.2
+    "pr_total": 141365.28,
+    "vl_com_corretora": 17781.28,
+    "valor_repasse": 8890.73,
+    "pr_liquido": 131209.01
   },
   {
     "year": "2023",
     "month": "12",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 128373.25,
+    "pr_total": 100368.92,
     "vl_com_corretora": 55944.97,
     "valor_repasse": 27972.53,
     "pr_liquido": 93470.77
@@ -1713,313 +255,88 @@
     "year": "2023",
     "month": "12",
     "ramo_decoded": "Cyber",
-    "pr_total": 37814.08,
+    "pr_total": 18907.04,
     "vl_com_corretora": 1760.76,
-    "valor_repasse": 1232.536,
-    "pr_liquido": 35215.2
+    "valor_repasse": 616.27,
+    "pr_liquido": 17607.6
   },
   {
     "year": "2023",
     "month": "12",
     "ramo_decoded": "Empresarial",
-    "pr_total": 70291.08,
+    "pr_total": 35145.54,
     "vl_com_corretora": 4551.2300000000005,
-    "valor_repasse": 3185.8705,
-    "pr_liquido": 65460.12
-  },
-  {
-    "year": "2023",
-    "month": "12",
-    "ramo_decoded": "Fiança",
-    "pr_total": 7309.3099999999995,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 411.817,
-    "pr_liquido": 6806.96
-  },
-  {
-    "year": "2023",
-    "month": "12",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 408635.57,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 104416.72,
-    "pr_liquido": 375089.89
-  },
-  {
-    "year": "2023",
-    "month": "12",
-    "ramo_decoded": "Residencial",
-    "pr_total": 2018.22,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 96.0295,
-    "pr_liquido": 1879.5
-  },
-  {
-    "year": "2023",
-    "month": "12",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2023",
-    "month": "12",
-    "ramo_decoded": "Vida",
-    "pr_total": 8614.22,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1802.135,
-    "pr_liquido": 8581.609999999999
-  },
-  {
-    "year": "2024",
-    "month": "01",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 17681.9,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 611.8315,
-    "pr_liquido": 16431.72
-  },
-  {
-    "year": "2024",
-    "month": "01",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 19130.35,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 225.3685,
-    "pr_liquido": 19130.35
+    "valor_repasse": 1592.94,
+    "pr_liquido": 32730.06
   },
   {
     "year": "2024",
     "month": "01",
     "ramo_decoded": "Condomínio",
-    "pr_total": 306727.66000000003,
-    "vl_com_corretora": 60707.090000000004,
-    "valor_repasse": 65156.0,
-    "pr_liquido": 337831.51
-  },
-  {
-    "year": "2024",
-    "month": "01",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 27692.53,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 363159.24,
+    "vl_com_corretora": 42290.44,
+    "valor_repasse": 21145.420000000002,
+    "pr_liquido": 337831.83999999997
   },
   {
     "year": "2024",
     "month": "01",
     "ramo_decoded": "Empresarial",
-    "pr_total": 12750.6,
+    "pr_total": 6430.3,
     "vl_com_corretora": 598.84,
-    "valor_repasse": 380.68399999999997,
-    "pr_liquido": 11866.72
-  },
-  {
-    "year": "2024",
-    "month": "01",
-    "ramo_decoded": "Fiança",
-    "pr_total": 10876.2,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1390.3715,
-    "pr_liquido": 9402.38
-  },
-  {
-    "year": "2024",
-    "month": "01",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 461342.53,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 21238.120000000003,
-    "pr_liquido": 415980.22
-  },
-  {
-    "year": "2024",
-    "month": "01",
-    "ramo_decoded": "Residencial",
-    "pr_total": 4368.73,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 357.3745,
-    "pr_liquido": 3950.54
-  },
-  {
-    "year": "2024",
-    "month": "01",
-    "ramo_decoded": "Vida",
-    "pr_total": 8310.78,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1738.655,
-    "pr_liquido": 8279.32
-  },
-  {
-    "year": "2024",
-    "month": "02",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 9187.650000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 239.421,
-    "pr_liquido": 7552.17
+    "valor_repasse": 209.59,
+    "pr_liquido": 5988.36
   },
   {
     "year": "2024",
     "month": "02",
     "ramo_decoded": "Condomínio",
-    "pr_total": 144642.33000000002,
-    "vl_com_corretora": 14889.08,
-    "valor_repasse": 10732.85,
-    "pr_liquido": 128500.28
+    "pr_total": 179588.5,
+    "vl_com_corretora": 19792.94,
+    "valor_repasse": 9896.6,
+    "pr_liquido": 166845.58000000002
   },
   {
     "year": "2024",
     "month": "02",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 134438.42,
+    "pr_total": 106573.71,
     "vl_com_corretora": 59528.020000000004,
     "valor_repasse": 29764.04,
     "pr_liquido": 99249.08
   },
   {
     "year": "2024",
-    "month": "02",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 1896.68,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": -380.01599999999996,
-    "pr_liquido": 1629.4999999999998
-  },
-  {
-    "year": "2024",
-    "month": "02",
-    "ramo_decoded": "Fiança",
-    "pr_total": 2238.25,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 109.431,
-    "pr_liquido": 2084.42
-  },
-  {
-    "year": "2024",
-    "month": "02",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 325056.06,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 74030.84,
-    "pr_liquido": 299602.3
-  },
-  {
-    "year": "2024",
-    "month": "02",
-    "ramo_decoded": "Vida",
-    "pr_total": 38065.92,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7963.58,
-    "pr_liquido": 37921.82
-  },
-  {
-    "year": "2024",
-    "month": "03",
-    "ramo_decoded": "Automóvel",
-    "pr_total": -393.01,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": -137.5535,
-    "pr_liquido": -393.01
-  },
-  {
-    "year": "2024",
     "month": "03",
     "ramo_decoded": "Condomínio",
-    "pr_total": 200696.38,
-    "vl_com_corretora": 25345.75,
-    "valor_repasse": 20115.97,
-    "pr_liquido": 187866.86000000002
+    "pr_total": 204639.78,
+    "vl_com_corretora": 22751.36,
+    "valor_repasse": 11354.61,
+    "pr_liquido": 189352.33000000002
   },
   {
     "year": "2024",
     "month": "03",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 237728.6,
+    "pr_total": 185863.13999999998,
     "vl_com_corretora": 103730.91,
     "valor_repasse": 51865.55,
     "pr_liquido": 173089.15
   },
   {
     "year": "2024",
-    "month": "03",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 4525.52,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 590.03,
-    "pr_liquido": 4214.49
-  },
-  {
-    "year": "2024",
-    "month": "03",
-    "ramo_decoded": "Fiança",
-    "pr_total": 101796.46,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 5784.5375,
-    "pr_liquido": 94783.49
-  },
-  {
-    "year": "2024",
-    "month": "03",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 498042.33,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 129866.1,
-    "pr_liquido": 463231.24
-  },
-  {
-    "year": "2024",
-    "month": "03",
-    "ramo_decoded": "Residencial",
-    "pr_total": -153.41000000000003,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": -53.6935,
-    "pr_liquido": -153.41000000000003
-  },
-  {
-    "year": "2024",
-    "month": "03",
-    "ramo_decoded": "Vida",
-    "pr_total": 71.27,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 14.91,
-    "pr_liquido": 71.0
-  },
-  {
-    "year": "2024",
-    "month": "04",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 2824.21,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 84.9905,
-    "pr_liquido": 2428.3
-  },
-  {
-    "year": "2024",
-    "month": "04",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 236144.44,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2459.5585,
-    "pr_liquido": 236144.44
-  },
-  {
-    "year": "2024",
     "month": "04",
     "ramo_decoded": "Condomínio",
-    "pr_total": 224842.25,
-    "vl_com_corretora": 28602.68,
-    "valor_repasse": 50782.25,
-    "pr_liquido": 230164.9
+    "pr_total": 297648.83,
+    "vl_com_corretora": 33096.84,
+    "valor_repasse": 16548.585,
+    "pr_liquido": 275106.51
   },
   {
     "year": "2024",
     "month": "04",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 224598.28,
+    "pr_total": 197259.81,
     "vl_com_corretora": 110061.99,
     "valor_repasse": 55031.13,
     "pr_liquido": 183702.53
@@ -2028,61 +345,25 @@
     "year": "2024",
     "month": "04",
     "ramo_decoded": "Empresarial",
-    "pr_total": 0.0,
-    "vl_com_corretora": 3676.94,
-    "valor_repasse": 183.85,
-    "pr_liquido": 3676.94
-  },
-  {
-    "year": "2024",
-    "month": "04",
-    "ramo_decoded": "Fiança",
-    "pr_total": 156025.09,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 9701.530999999999,
-    "pr_liquido": 145240.93
-  },
-  {
-    "year": "2024",
-    "month": "04",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 669168.76,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 175971.24,
-    "pr_liquido": 622563.92
-  },
-  {
-    "year": "2024",
-    "month": "04",
-    "ramo_decoded": "Vida",
-    "pr_total": 37495.86,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7844.325000000001,
-    "pr_liquido": 37353.91
-  },
-  {
-    "year": "2024",
-    "month": "05",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 160212.97,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1669.346,
-    "pr_liquido": 160212.97
+    "pr_total": 3948.3,
+    "vl_com_corretora": 367.69,
+    "valor_repasse": 183.845,
+    "pr_liquido": 3677.0
   },
   {
     "year": "2024",
     "month": "05",
     "ramo_decoded": "Condomínio",
-    "pr_total": 243690.24,
-    "vl_com_corretora": 28037.28,
-    "valor_repasse": 23090.34,
-    "pr_liquido": 220937.21
+    "pr_total": 257796.07,
+    "vl_com_corretora": 30189.37,
+    "valor_repasse": 15017.465,
+    "pr_liquido": 238646.9
   },
   {
     "year": "2024",
     "month": "05",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 128819.48,
+    "pr_total": 100728.62,
     "vl_com_corretora": 56181.72,
     "valor_repasse": 28090.9,
     "pr_liquido": 93805.76
@@ -2090,89 +371,26 @@
   {
     "year": "2024",
     "month": "05",
-    "ramo_decoded": "Fiança",
-    "pr_total": 183456.36000000002,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 11002.3585,
-    "pr_liquido": 170708.93
-  },
-  {
-    "year": "2024",
-    "month": "05",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 381185.82,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 95577.935,
-    "pr_liquido": 354731.74
-  },
-  {
-    "year": "2024",
-    "month": "05",
-    "ramo_decoded": "Residencial",
-    "pr_total": 424.43,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 13.8355,
-    "pr_liquido": 395.26
-  },
-  {
-    "year": "2024",
-    "month": "05",
     "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 8005.32,
+    "pr_total": 4002.66,
     "vl_com_corretora": 4002.66,
-    "valor_repasse": 2801.861,
-    "pr_liquido": 8005.32
-  },
-  {
-    "year": "2024",
-    "month": "05",
-    "ramo_decoded": "Viagem",
-    "pr_total": 1280.42,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 66.969,
-    "pr_liquido": 1275.6
-  },
-  {
-    "year": "2024",
-    "month": "05",
-    "ramo_decoded": "Vida",
-    "pr_total": 29066.13,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6080.78,
-    "pr_liquido": 28956.1
-  },
-  {
-    "year": "2024",
-    "month": "06",
-    "ramo_decoded": "Automóvel",
-    "pr_total": -207.27,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": -207.27
-  },
-  {
-    "year": "2024",
-    "month": "06",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 137790.25999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1518.3455000000001,
-    "pr_liquido": 137790.25999999998
+    "valor_repasse": 1400.93,
+    "pr_liquido": 4002.66
   },
   {
     "year": "2024",
     "month": "06",
     "ramo_decoded": "Condomínio",
-    "pr_total": 239983.46,
-    "vl_com_corretora": 27061.14,
-    "valor_repasse": 38781.58,
-    "pr_liquido": 234480.67
+    "pr_total": 295257.24,
+    "vl_com_corretora": 32696.82,
+    "valor_repasse": 16348.625,
+    "pr_liquido": 273106.1
   },
   {
     "year": "2024",
     "month": "06",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 122888.04999999999,
+    "pr_total": 96090.14,
     "vl_com_corretora": 53595.82,
     "valor_repasse": 26797.96,
     "pr_liquido": 89486.05
@@ -2181,70 +399,25 @@
     "year": "2024",
     "month": "06",
     "ramo_decoded": "Empresarial",
-    "pr_total": 9251.14,
+    "pr_total": 4625.57,
     "vl_com_corretora": 861.54,
-    "valor_repasse": 603.059,
-    "pr_liquido": 8615.32
-  },
-  {
-    "year": "2024",
-    "month": "06",
-    "ramo_decoded": "Fiança",
-    "pr_total": 185293.13999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 12833.961,
-    "pr_liquido": 172452.01
-  },
-  {
-    "year": "2024",
-    "month": "06",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 330882.44,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 87985.785,
-    "pr_liquido": 307932.3
-  },
-  {
-    "year": "2024",
-    "month": "06",
-    "ramo_decoded": "Vida",
-    "pr_total": 29098.969999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6087.65,
-    "pr_liquido": 28988.809999999998
-  },
-  {
-    "year": "2024",
-    "month": "07",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 11194.33,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1074.7835,
-    "pr_liquido": 10424.96
-  },
-  {
-    "year": "2024",
-    "month": "07",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 364849.63,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4628.603,
-    "pr_liquido": 364849.63
+    "valor_repasse": 301.52,
+    "pr_liquido": 4307.66
   },
   {
     "year": "2024",
     "month": "07",
     "ramo_decoded": "Condomínio",
-    "pr_total": 197934.5,
-    "vl_com_corretora": 34905.24,
-    "valor_repasse": 27507.66,
-    "pr_liquido": 201449.7
+    "pr_total": 216758.66999999998,
+    "vl_com_corretora": 23632.43,
+    "valor_repasse": 11677.34,
+    "pr_liquido": 201450.9
   },
   {
     "year": "2024",
     "month": "07",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 115025.68,
+    "pr_total": 88409.93,
     "vl_com_corretora": 49380.240000000005,
     "valor_repasse": 24690.17,
     "pr_liquido": 82333.68000000001
@@ -2253,88 +426,34 @@
     "year": "2024",
     "month": "07",
     "ramo_decoded": "Cyber",
-    "pr_total": 36459.28,
+    "pr_total": 18229.64,
     "vl_com_corretora": 2546.51,
-    "valor_repasse": 1782.5585,
-    "pr_liquido": 33953.52
+    "valor_repasse": 891.28,
+    "pr_liquido": 16976.76
   },
   {
     "year": "2024",
     "month": "07",
     "ramo_decoded": "Empresarial",
-    "pr_total": 44158.020000000004,
+    "pr_total": 22079.010000000002,
     "vl_com_corretora": 4103.54,
-    "valor_repasse": 2872.459,
-    "pr_liquido": 41089.08
-  },
-  {
-    "year": "2024",
-    "month": "07",
-    "ramo_decoded": "Fiança",
-    "pr_total": 59006.86,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4727.184,
-    "pr_liquido": 54456.44
-  },
-  {
-    "year": "2024",
-    "month": "07",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 490644.81,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 125588.91,
-    "pr_liquido": 456248.0
-  },
-  {
-    "year": "2024",
-    "month": "07",
-    "ramo_decoded": "Residencial",
-    "pr_total": 1187.24,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 73.29,
-    "pr_liquido": 1105.65
-  },
-  {
-    "year": "2024",
-    "month": "07",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 27051.5,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 945.854,
-    "pr_liquido": 27051.5
-  },
-  {
-    "year": "2024",
-    "month": "08",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 4871.9,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 142.82799999999997,
-    "pr_liquido": 4517.25
-  },
-  {
-    "year": "2024",
-    "month": "08",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 93644.48000000001,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1116.2375,
-    "pr_liquido": 93644.48000000001
+    "valor_repasse": 1436.22,
+    "pr_liquido": 20544.54
   },
   {
     "year": "2024",
     "month": "08",
     "ramo_decoded": "Condomínio",
-    "pr_total": 321236.68,
-    "vl_com_corretora": 33090.62,
-    "valor_repasse": 37307.74,
+    "pr_total": 319391.82,
+    "vl_com_corretora": 33917.27,
+    "valor_repasse": 16545.535,
     "pr_liquido": 296875.82
   },
   {
     "year": "2024",
     "month": "08",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 91804.26000000001,
+    "pr_total": 63977.91,
     "vl_com_corretora": 55652.7,
     "valor_repasse": 27826.35,
     "pr_liquido": 59580.84
@@ -2342,242 +461,62 @@
   {
     "year": "2024",
     "month": "08",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 15322.52,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 381.4545,
-    "pr_liquido": 14269.42
-  },
-  {
-    "year": "2024",
-    "month": "08",
-    "ramo_decoded": "Fiança",
-    "pr_total": 192301.47,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 11579.771,
-    "pr_liquido": 178486.66
-  },
-  {
-    "year": "2024",
-    "month": "08",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 353671.29,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 93563.62,
-    "pr_liquido": 328740.52999999997
-  },
-  {
-    "year": "2024",
-    "month": "08",
-    "ramo_decoded": "Residencial",
-    "pr_total": 929.98,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 29.365,
-    "pr_liquido": 840.87
-  },
-  {
-    "year": "2024",
-    "month": "08",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 62732.74,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 21956.459000000003,
-    "pr_liquido": 62732.74
-  },
-  {
-    "year": "2024",
-    "month": "08",
     "ramo_decoded": "Vida",
-    "pr_total": 66990.79,
-    "vl_com_corretora": 37785.07,
-    "valor_repasse": 25236.365,
-    "pr_liquido": 120173.13
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 7530.53,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 299.7645,
-    "pr_liquido": 7012.98
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 317242.89,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3699.7065000000002,
-    "pr_liquido": 317242.89
+    "pr_total": 30323.48,
+    "vl_com_corretora": 12687.650000000001,
+    "valor_repasse": 6343.83,
+    "pr_liquido": 30208.68
   },
   {
     "year": "2024",
     "month": "09",
     "ramo_decoded": "Condomínio",
-    "pr_total": 55669.35,
-    "vl_com_corretora": 4731.67,
-    "valor_repasse": 5332.08,
-    "pr_liquido": 35961.45
+    "pr_total": 212268.82,
+    "vl_com_corretora": 24651.15,
+    "valor_repasse": 12304.29,
+    "pr_liquido": 197704.26
   },
   {
     "year": "2024",
     "month": "09",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 26902.84,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 13168.72,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 630.098,
-    "pr_liquido": 11628.22
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Fiança",
-    "pr_total": 84769.36,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4821.229,
-    "pr_liquido": 78943.37
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 288792.67,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 57033.515,
-    "pr_liquido": 264723.32
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Residencial",
-    "pr_total": 1116.19,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 32.305,
-    "pr_liquido": 856.01
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 66154.19,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 23153.966500000002,
-    "pr_liquido": 66154.19
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Viagem",
-    "pr_total": 222.25,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7.7805,
-    "pr_liquido": 222.25
-  },
-  {
-    "year": "2024",
-    "month": "09",
-    "ramo_decoded": "Vida",
-    "pr_total": 29946.54,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6264.965,
-    "pr_liquido": 29833.170000000002
-  },
-  {
-    "year": "2024",
-    "month": "10",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 369.159,
-    "pr_liquido": 6230.51
-  },
-  {
-    "year": "2024",
-    "month": "10",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4130.6895,
-    "pr_liquido": 264795.59
+    "pr_total": 96496.62,
+    "vl_com_corretora": 53805.67,
+    "valor_repasse": 26902.855,
+    "pr_liquido": 89862.86
   },
   {
     "year": "2024",
     "month": "10",
     "ramo_decoded": "Condomínio",
-    "pr_total": 93647.39,
-    "vl_com_corretora": 249352.28,
-    "valor_repasse": 18161.6,
-    "pr_liquido": 312645.27
+    "pr_total": 336049.11,
+    "vl_com_corretora": 36322.85,
+    "valor_repasse": 18161.47,
+    "pr_liquido": 312645.83
   },
   {
     "year": "2024",
     "month": "10",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 1682.52,
-    "vl_com_corretora": 5610.389999999999,
-    "valor_repasse": 1682.5300000000002,
-    "pr_liquido": 5610.389999999999
+    "pr_total": 6024.450000000001,
+    "vl_com_corretora": 3365.04,
+    "valor_repasse": 1682.52,
+    "pr_liquido": 5611.0
   },
   {
     "year": "2024",
     "month": "10",
     "ramo_decoded": "Empresarial",
     "pr_total": -110.0,
-    "vl_com_corretora": -110.0,
-    "valor_repasse": 1649.5395,
-    "pr_liquido": 30789.73
-  },
-  {
-    "year": "2024",
-    "month": "10",
-    "ramo_decoded": "Fiança",
-    "pr_total": 0.0,
-    "vl_com_corretora": 250.84,
-    "valor_repasse": 10126.003999999999,
-    "pr_liquido": 206774.27000000002
-  },
-  {
-    "year": "2024",
-    "month": "10",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 18460.329999999998,
-    "vl_com_corretora": -877.74,
-    "valor_repasse": 121890.765,
-    "pr_liquido": 431571.60000000003
-  },
-  {
-    "year": "2024",
-    "month": "10",
-    "ramo_decoded": "Residencial",
-    "pr_total": 0.0,
     "vl_com_corretora": 0.0,
-    "valor_repasse": 25.683,
-    "pr_liquido": 640.44
-  },
-  {
-    "year": "2024",
-    "month": "10",
-    "ramo_decoded": "Vida",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7450.835,
-    "pr_liquido": 37874.2
+    "valor_repasse": -38.5,
+    "pr_liquido": -110.0
   },
   {
     "year": "2024",
     "month": "11",
     "ramo_decoded": "Automóvel",
-    "pr_total": 0.0,
+    "pr_total": 10715.33,
     "vl_com_corretora": 0.0,
     "valor_repasse": 224.301,
     "pr_liquido": 9945.61
@@ -2586,7 +525,7 @@
     "year": "2024",
     "month": "11",
     "ramo_decoded": "Capitalização",
-    "pr_total": 0.0,
+    "pr_total": 15451.59,
     "vl_com_corretora": 0.0,
     "valor_repasse": 5408.0565,
     "pr_liquido": 15451.59
@@ -2595,25 +534,25 @@
     "year": "2024",
     "month": "11",
     "ramo_decoded": "Condomínio",
-    "pr_total": 35599.99,
-    "vl_com_corretora": 25137.91,
-    "valor_repasse": 197397.33000000002,
+    "pr_total": 213200.57,
+    "vl_com_corretora": 25203.8,
+    "valor_repasse": 12568.95,
     "pr_liquido": 198491.6
   },
   {
     "year": "2024",
     "month": "11",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 31234.15,
+    "pr_total": 76004.06,
     "vl_com_corretora": 62468.29,
-    "valor_repasse": 76004.06,
+    "valor_repasse": 31234.145,
     "pr_liquido": 70780.47
   },
   {
     "year": "2024",
     "month": "11",
     "ramo_decoded": "Fiança",
-    "pr_total": 0.0,
+    "pr_total": 234052.87,
     "vl_com_corretora": 0.0,
     "valor_repasse": 13318.2595,
     "pr_liquido": 218045.03
@@ -2622,16 +561,16 @@
     "year": "2024",
     "month": "11",
     "ramo_decoded": "Imobiliário",
-    "pr_total": 0.0,
+    "pr_total": 356654.16000000003,
     "vl_com_corretora": 0.0,
-    "valor_repasse": 108910.9,
+    "valor_repasse": 109271.095,
     "pr_liquido": 331541.11
   },
   {
     "year": "2024",
     "month": "11",
     "ramo_decoded": "Vida",
-    "pr_total": 0.0,
+    "pr_total": 68.76,
     "vl_com_corretora": 0.0,
     "valor_repasse": 3.425,
     "pr_liquido": 68.5
@@ -2639,982 +578,469 @@
   {
     "year": "2024",
     "month": "12",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 873.75,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 36.606500000000004,
-    "pr_liquido": 813.61
-  },
-  {
-    "year": "2024",
-    "month": "12",
     "ramo_decoded": "Capitalização",
-    "pr_total": 431772.58,
+    "pr_total": 54913.75,
     "vl_com_corretora": 0.0,
-    "valor_repasse": 7050.267,
-    "pr_liquido": 431609.56
+    "valor_repasse": 570.829,
+    "pr_liquido": 54913.75
   },
   {
     "year": "2024",
     "month": "12",
     "ramo_decoded": "Condomínio",
-    "pr_total": 56329.630000000005,
-    "vl_com_corretora": 25145.64,
-    "valor_repasse": 188129.56,
-    "pr_liquido": 213359.54
+    "pr_total": 254554.57,
+    "vl_com_corretora": 28407.25,
+    "valor_repasse": 14203.68,
+    "pr_liquido": 236511.74
   },
   {
     "year": "2024",
     "month": "12",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 26760.98,
+    "pr_total": 59787.44,
     "vl_com_corretora": 53382.91,
-    "valor_repasse": 59717.920000000006,
+    "valor_repasse": 26691.455,
     "pr_liquido": 55678.36
   },
   {
     "year": "2024",
     "month": "12",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 435.91,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": -134.365,
-    "pr_liquido": 373.78000000000003
-  },
-  {
-    "year": "2024",
-    "month": "12",
-    "ramo_decoded": "Fiança",
-    "pr_total": 178763.13,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 11362.5645,
-    "pr_liquido": 166481.01
-  },
-  {
-    "year": "2024",
-    "month": "12",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 184900.52,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 48564.875,
-    "pr_liquido": 171919.39
-  },
-  {
-    "year": "2024",
-    "month": "12",
-    "ramo_decoded": "Residencial",
-    "pr_total": 483.75,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 12.921999999999999,
-    "pr_liquido": 449.89
-  },
-  {
-    "year": "2024",
-    "month": "12",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 38264.009999999995,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 13392.4035,
-    "pr_liquido": 38264.009999999995
-  },
-  {
-    "year": "2024",
-    "month": "12",
     "ramo_decoded": "Vida",
-    "pr_total": 22825.260000000002,
+    "pr_total": 30021.42,
     "vl_com_corretora": 12561.26,
-    "valor_repasse": 32493.719999999998,
-    "pr_liquido": 46389.770000000004
-  },
-  {
-    "year": "2025",
-    "month": "01",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 2297.72,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 172.58499999999998,
-    "pr_liquido": 2139.81
-  },
-  {
-    "year": "2025",
-    "month": "01",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 434165.83999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 5582.4685,
-    "pr_liquido": 434051.0
+    "valor_repasse": 6280.63,
+    "pr_liquido": 29907.77
   },
   {
     "year": "2025",
     "month": "01",
     "ramo_decoded": "Condomínio",
-    "pr_total": 13531.06,
-    "vl_com_corretora": 4884.07,
-    "valor_repasse": 2442.06,
-    "pr_liquido": 47132.54
+    "pr_total": 251872.07,
+    "vl_com_corretora": 30502.03,
+    "valor_repasse": 15251.08,
+    "pr_liquido": 234549.91
   },
   {
     "year": "2025",
     "month": "01",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 23352.01,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "01",
-    "ramo_decoded": "Fiança",
-    "pr_total": 112164.83,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4160.968000000001,
-    "pr_liquido": 104218.68999999999
-  },
-  {
-    "year": "2025",
-    "month": "01",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 371517.07,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 90325.965,
-    "pr_liquido": 343331.4
-  },
-  {
-    "year": "2025",
-    "month": "01",
-    "ramo_decoded": "Residencial",
-    "pr_total": 761.21,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 22.7325,
-    "pr_liquido": 649.52
-  },
-  {
-    "year": "2025",
-    "month": "01",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 9141.74,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3199.6089999999995,
-    "pr_liquido": 9141.74
+    "pr_total": 55126.74,
+    "vl_com_corretora": 46704.01,
+    "valor_repasse": 23352.03,
+    "pr_liquido": 51337.98
   },
   {
     "year": "2025",
     "month": "01",
     "ramo_decoded": "Vida",
-    "pr_total": 14586.95,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1234.3799999999999,
-    "pr_liquido": 8274.88
-  },
-  {
-    "year": "2025",
-    "month": "02",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 485.83,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 47.5055,
-    "pr_liquido": 452.44
-  },
-  {
-    "year": "2025",
-    "month": "02",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 248560.68,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4283.545,
-    "pr_liquido": 248560.68
+    "pr_total": 30021.42,
+    "vl_com_corretora": 12561.26,
+    "valor_repasse": 6280.63,
+    "pr_liquido": 29907.77
   },
   {
     "year": "2025",
     "month": "02",
     "ramo_decoded": "Condomínio",
-    "pr_total": 14674.15,
-    "vl_com_corretora": 13650.67,
-    "valor_repasse": 6825.39,
-    "pr_liquido": 111607.46
+    "pr_total": 268211.94,
+    "vl_com_corretora": 31614.09,
+    "valor_repasse": 15807.21,
+    "pr_liquido": 249919.3
   },
   {
     "year": "2025",
     "month": "02",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 26543.84,
-    "vl_com_corretora": 40000.0,
-    "valor_repasse": 20000.0,
-    "pr_liquido": 40000.0
-  },
-  {
-    "year": "2025",
-    "month": "02",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 1240.51,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 122.28999999999999,
-    "pr_liquido": 1155.25
-  },
-  {
-    "year": "2025",
-    "month": "02",
-    "ramo_decoded": "Fiança",
-    "pr_total": 138614.38999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3301.123,
-    "pr_liquido": 128737.33
-  },
-  {
-    "year": "2025",
-    "month": "02",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 318991.61,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 84962.025,
-    "pr_liquido": 296936.96
-  },
-  {
-    "year": "2025",
-    "month": "02",
-    "ramo_decoded": "Residencial",
-    "pr_total": 2873.88,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 116.00399999999999,
-    "pr_liquido": 2651.32
+    "pr_total": 95029.0,
+    "vl_com_corretora": 53098.71,
+    "valor_repasse": 26549.41,
+    "pr_liquido": 88497.83
   },
   {
     "year": "2025",
     "month": "02",
     "ramo_decoded": "Vida",
-    "pr_total": 14577.16,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1241.645,
-    "pr_liquido": 8277.62
-  },
-  {
-    "year": "2025",
-    "month": "03",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 71072.5,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 740.2395,
-    "pr_liquido": 0.0
+    "pr_total": 29961.42,
+    "vl_com_corretora": 12536.16,
+    "valor_repasse": 6268.08,
+    "pr_liquido": 29848.0
   },
   {
     "year": "2025",
     "month": "03",
     "ramo_decoded": "Condomínio",
-    "pr_total": 14671.04,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 269213.19,
+    "vl_com_corretora": 30563.53,
+    "valor_repasse": 15281.87,
+    "pr_liquido": 250517.89
   },
   {
     "year": "2025",
     "month": "03",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 27261.35,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "03",
-    "ramo_decoded": "Fiança",
-    "pr_total": 261616.21,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 14975.3569,
-    "pr_liquido": 23921.78
-  },
-  {
-    "year": "2025",
-    "month": "03",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 534666.38,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 136925.26499999998,
-    "pr_liquido": 19971.99
+    "pr_total": 97798.45999999999,
+    "vl_com_corretora": 54522.69,
+    "valor_repasse": 27261.399999999998,
+    "pr_liquido": 91076.97
   },
   {
     "year": "2025",
     "month": "03",
     "ramo_decoded": "Vida",
-    "pr_total": 14471.89,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1223.155,
-    "pr_liquido": 8196.17
-  },
-  {
-    "year": "2025",
-    "month": "04",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 16520.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 315.119,
-    "pr_liquido": 16520.0
+    "pr_total": 29849.030000000002,
+    "vl_com_corretora": 12489.14,
+    "valor_repasse": 6244.57,
+    "pr_liquido": 29736.039999999997
   },
   {
     "year": "2025",
     "month": "04",
     "ramo_decoded": "Condomínio",
-    "pr_total": 12276.69,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 205090.91999999998,
+    "vl_com_corretora": 20519.69,
+    "valor_repasse": 10260.0,
+    "pr_liquido": 191004.14
   },
   {
     "year": "2025",
     "month": "04",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 27279.72,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "04",
-    "ramo_decoded": "Fiança",
-    "pr_total": 123548.6,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 8464.9705,
-    "pr_liquido": 115028.13
-  },
-  {
-    "year": "2025",
-    "month": "04",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 703465.98,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 183257.32,
-    "pr_liquido": 654533.71
+    "pr_total": 97698.12,
+    "vl_com_corretora": 54559.44,
+    "valor_repasse": 27279.75,
+    "pr_liquido": 90983.53
   },
   {
     "year": "2025",
     "month": "04",
     "ramo_decoded": "Vida",
-    "pr_total": 14532.009999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1245.9,
-    "pr_liquido": 8306.0
-  },
-  {
-    "year": "2025",
-    "month": "05",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 571065.09,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 8120.8365,
-    "pr_liquido": 570989.85
+    "pr_total": 29609.46,
+    "vl_com_corretora": 12388.890000000001,
+    "valor_repasse": 6194.45,
+    "pr_liquido": 29497.37
   },
   {
     "year": "2025",
     "month": "05",
     "ramo_decoded": "Condomínio",
-    "pr_total": 17132.05,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "05",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 26732.49,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "05",
-    "ramo_decoded": "Fiança",
-    "pr_total": 51084.73,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1256.6295,
-    "pr_liquido": 47021.42
-  },
-  {
-    "year": "2025",
-    "month": "05",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 558106.61,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 149725.785,
-    "pr_liquido": 518615.17
+    "pr_total": 318217.87,
+    "vl_com_corretora": 33279.36,
+    "valor_repasse": 15180.4,
+    "pr_liquido": 296188.76
   },
   {
     "year": "2025",
     "month": "05",
     "ramo_decoded": "Vida",
-    "pr_total": 15023.81,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1333.44,
-    "pr_liquido": 8889.6
-  },
-  {
-    "year": "2025",
-    "month": "06",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 232203.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3271.051,
-    "pr_liquido": 232203.0
+    "pr_total": 29160.05,
+    "vl_com_corretora": 12200.86,
+    "valor_repasse": 6100.4400000000005,
+    "pr_liquido": 29049.66
   },
   {
     "year": "2025",
     "month": "06",
     "ramo_decoded": "Condomínio",
-    "pr_total": 14278.79,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 230109.9,
+    "vl_com_corretora": 24475.65,
+    "valor_repasse": 12102.1,
+    "pr_liquido": 214257.77
   },
   {
     "year": "2025",
     "month": "06",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 27219.72,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "06",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 1779.9699999999998,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 99.2635,
-    "pr_liquido": 1653.59
-  },
-  {
-    "year": "2025",
-    "month": "06",
-    "ramo_decoded": "Fiança",
-    "pr_total": 394396.97,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 26158.8425,
-    "pr_liquido": 367262.38
-  },
-  {
-    "year": "2025",
-    "month": "06",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 465363.33,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 126720.075,
-    "pr_liquido": 432661.84
+    "pr_total": 97405.48,
+    "vl_com_corretora": 54439.439999999995,
+    "valor_repasse": 27219.75,
+    "pr_liquido": 90732.38
   },
   {
     "year": "2025",
     "month": "06",
     "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 2005.01,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 130.704,
-    "pr_liquido": 1867.21
+    "pr_total": 29047.9,
+    "vl_com_corretora": 2705.15,
+    "valor_repasse": 1352.57,
+    "pr_liquido": 27051.5
   },
   {
     "year": "2025",
     "month": "06",
     "ramo_decoded": "Vida",
-    "pr_total": 6071.87,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3.425,
-    "pr_liquido": 68.5
-  },
-  {
-    "year": "2025",
-    "month": "07",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 906306.65,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 11843.349,
-    "pr_liquido": 906306.65
+    "pr_total": 28841.82,
+    "vl_com_corretora": 12006.210000000001,
+    "valor_repasse": 6003.110000000001,
+    "pr_liquido": 28732.629999999997
   },
   {
     "year": "2025",
     "month": "07",
     "ramo_decoded": "Condomínio",
-    "pr_total": 21584.59,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 369836.3,
+    "vl_com_corretora": 37941.21,
+    "valor_repasse": 18970.81,
+    "pr_liquido": 344484.34
   },
   {
     "year": "2025",
     "month": "07",
     "ramo_decoded": "Conteúdo",
-    "pr_total": 26813.78,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "07",
-    "ramo_decoded": "Fiança",
-    "pr_total": 38698.3,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": -1007.1845000000001,
-    "pr_liquido": 35214.82
-  },
-  {
-    "year": "2025",
-    "month": "07",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 496902.25,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 132383.305,
-    "pr_liquido": 461355.0
+    "pr_total": 95875.12,
+    "vl_com_corretora": 53453.95,
+    "valor_repasse": 26727.02,
+    "pr_liquido": 89285.82
   },
   {
     "year": "2025",
     "month": "07",
     "ramo_decoded": "Vida",
-    "pr_total": 6388.7300000000005,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 3.425,
-    "pr_liquido": 68.5
-  },
-  {
-    "year": "2025",
-    "month": "08",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 421013.38,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6336.036,
-    "pr_liquido": 421013.38
+    "pr_total": 30209.45,
+    "vl_com_corretora": 12639.94,
+    "valor_repasse": 6319.97,
+    "pr_liquido": 30095.09
   },
   {
     "year": "2025",
     "month": "08",
     "ramo_decoded": "Condomínio",
-    "pr_total": 19471.24,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 414155.82,
+    "vl_com_corretora": 42149.81,
+    "valor_repasse": 21075.12,
+    "pr_liquido": 385774.53
   },
   {
     "year": "2025",
+    "month": "09",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 281712.22,
+    "vl_com_corretora": 33328.92,
+    "valor_repasse": 16261.66,
+    "pr_liquido": 262300.71
+  },
+  {
+    "year": "2025",
+    "month": "09",
+    "ramo_decoded": "Conteúdo",
+    "pr_total": 88703.59,
+    "vl_com_corretora": 49469.43,
+    "valor_repasse": 24734.739999999998,
+    "pr_liquido": 82449.04
+  },
+  {
+    "year": "2025",
+    "month": "10",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 252092.76,
+    "vl_com_corretora": 30607.53,
+    "valor_repasse": 15303.59,
+    "pr_liquido": 234783.37
+  },
+  {
+    "year": "2025",
+    "month": "10",
+    "ramo_decoded": "Conteúdo",
+    "pr_total": 189315.64,
+    "vl_com_corretora": 105524.77,
+    "valor_repasse": 52762.450000000004,
+    "pr_liquido": 176276.24
+  },
+  {
+    "year": "2025",
+    "month": "10",
+    "ramo_decoded": "Vida",
+    "pr_total": 34389.380000000005,
+    "vl_com_corretora": 14403.17,
+    "valor_repasse": 7184.5,
+    "pr_liquido": 34259.07
+  },
+  {
+    "year": "2025",
+    "month": "11",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 299249.52,
+    "vl_com_corretora": 35060.34,
+    "valor_repasse": 16900.37,
+    "pr_liquido": 278610.5
+  },
+  {
+    "year": "2025",
+    "month": "11",
+    "ramo_decoded": "Conteúdo",
+    "pr_total": 175765.68,
+    "vl_com_corretora": 98466.79,
+    "valor_repasse": 49233.45,
+    "pr_liquido": 164315.11000000002
+  },
+  {
+    "year": "2025",
+    "month": "11",
+    "ramo_decoded": "Vida",
+    "pr_total": 34219.380000000005,
+    "vl_com_corretora": 14317.74,
+    "valor_repasse": 7158.88,
+    "pr_liquido": 34089.840000000004
+  },
+  {
+    "year": "2025",
+    "month": "12",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 199018.63999999998,
+    "vl_com_corretora": 22610.28,
+    "valor_repasse": 10849.97,
+    "pr_liquido": 185277.98
+  },
+  {
+    "year": "2025",
+    "month": "12",
+    "ramo_decoded": "Conteúdo",
+    "pr_total": 78796.31,
+    "vl_com_corretora": 44001.9,
+    "valor_repasse": 22000.97,
+    "pr_liquido": 73370.06
+  },
+  {
+    "year": "2025",
+    "month": "12",
+    "ramo_decoded": "Vida",
+    "pr_total": 34056.04,
+    "vl_com_corretora": 14249.39,
+    "valor_repasse": 7124.7,
+    "pr_liquido": 33927.12
+  },
+  {
+    "year": "2026",
+    "month": "01",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 193031.98,
+    "vl_com_corretora": 24406.8,
+    "valor_repasse": 12203.53,
+    "pr_liquido": 179796.5
+  },
+  {
+    "year": "2026",
+    "month": "01",
+    "ramo_decoded": "Conteúdo",
+    "pr_total": 93237.73,
+    "vl_com_corretora": 51971.58,
+    "valor_repasse": 25985.81,
+    "pr_liquido": 86817.64
+  },
+  {
+    "year": "2026",
+    "month": "01",
+    "ramo_decoded": "Vida",
+    "pr_total": 34382.71,
+    "vl_com_corretora": 14386.08,
+    "valor_repasse": 7193.05,
+    "pr_liquido": 34252.55
+  },
+  {
+    "year": "2026",
+    "month": "02",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 175237.76,
+    "vl_com_corretora": 21250.05,
+    "valor_repasse": 10625.14,
+    "pr_liquido": 162761.67
+  },
+  {
+    "year": "2026",
+    "month": "02",
+    "ramo_decoded": "Conteúdo",
+    "pr_total": 88818.69,
+    "vl_com_corretora": 49602.130000000005,
+    "valor_repasse": 24801.07,
+    "pr_liquido": 82670.22
+  },
+  {
+    "year": "2026",
+    "month": "02",
+    "ramo_decoded": "Vida",
+    "pr_total": 34342.04,
+    "vl_com_corretora": 14369.05,
+    "valor_repasse": 7184.53,
+    "pr_liquido": 34212.03
+  },
+  {
+    "year": "2026",
+    "month": "05",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 8793.54,
+    "vl_com_corretora": 942.65,
+    "valor_repasse": 471.33,
+    "pr_liquido": 8189.18
+  },
+  {
+    "year": "2026",
+    "month": "06",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 16940.14,
+    "vl_com_corretora": 2585.5699999999997,
+    "valor_repasse": 1292.8,
+    "pr_liquido": 15775.87
+  },
+  {
+    "year": "2026",
+    "month": "07",
+    "ramo_decoded": "Condomínio",
+    "pr_total": 7978.41,
+    "vl_com_corretora": 1094.47,
+    "valor_repasse": 547.24,
+    "pr_liquido": 7430.07
+  },
+  {
+    "year": "2026",
+    "month": "07",
+    "ramo_decoded": "Conteúdo",
+    "pr_total": 10479.6,
+    "vl_com_corretora": 5757.22,
+    "valor_repasse": 2878.61,
+    "pr_liquido": 9758.0
+  },
+  {
+    "year": "2026",
     "month": "08",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 26863.08,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "ramo_decoded": "Condomínio",
+    "pr_total": 8836.9,
+    "vl_com_corretora": 1037.37,
+    "valor_repasse": 518.69,
+    "pr_liquido": 8229.55
   },
   {
-    "year": "2025",
-    "month": "08",
-    "ramo_decoded": "Fiança",
-    "pr_total": 166704.99,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 10092.4005,
-    "pr_liquido": 155185.16
-  },
-  {
-    "year": "2025",
-    "month": "08",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 413911.26,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 108492.185,
-    "pr_liquido": 385122.86
-  },
-  {
-    "year": "2025",
-    "month": "09",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 416740.99,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4640.9265,
-    "pr_liquido": 416740.99
-  },
-  {
-    "year": "2025",
+    "year": "2026",
     "month": "09",
     "ramo_decoded": "Condomínio",
-    "pr_total": 15931.83,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 32855.49,
+    "vl_com_corretora": 3335.26,
+    "valor_repasse": 1667.65,
+    "pr_liquido": 30597.399999999998
   },
   {
-    "year": "2025",
-    "month": "09",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 24734.72,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "09",
-    "ramo_decoded": "Fiança",
-    "pr_total": 254292.02,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4258.3485,
-    "pr_liquido": 235478.92
-  },
-  {
-    "year": "2025",
-    "month": "09",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 387573.44,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 91705.08499999999,
-    "pr_liquido": 358144.12
-  },
-  {
-    "year": "2025",
-    "month": "10",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 118395.5,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1785.55,
-    "pr_liquido": 118395.5
-  },
-  {
-    "year": "2025",
+    "year": "2026",
     "month": "10",
     "ramo_decoded": "Condomínio",
-    "pr_total": 13022.91,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 6321.45,
+    "vl_com_corretora": 1009.97,
+    "valor_repasse": 504.99,
+    "pr_liquido": 5886.99
   },
   {
-    "year": "2025",
-    "month": "10",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 25948.64,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "10",
-    "ramo_decoded": "Fiança",
-    "pr_total": 204532.52,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7534.2415,
-    "pr_liquido": 189947.95
-  },
-  {
-    "year": "2025",
-    "month": "10",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 473736.49,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 124073.04,
-    "pr_liquido": 440252.1
-  },
-  {
-    "year": "2025",
-    "month": "10",
-    "ramo_decoded": "Vida",
-    "pr_total": 15750.61,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1277.5,
-    "pr_liquido": 8516.66
-  },
-  {
-    "year": "2025",
-    "month": "11",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 206431.25,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2461.06,
-    "pr_liquido": 206431.25
-  },
-  {
-    "year": "2025",
+    "year": "2026",
     "month": "11",
     "ramo_decoded": "Condomínio",
-    "pr_total": 17027.82,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 18270.57,
+    "vl_com_corretora": 2151.96,
+    "valor_repasse": 1075.99,
+    "pr_liquido": 17014.870000000003
   },
   {
-    "year": "2025",
-    "month": "11",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 22370.33,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "11",
-    "ramo_decoded": "Fiança",
-    "pr_total": 310343.62,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7315.7570000000005,
-    "pr_liquido": 287237.34
-  },
-  {
-    "year": "2025",
-    "month": "11",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 409745.27,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 102150.92,
-    "pr_liquido": 379938.26
-  },
-  {
-    "year": "2025",
-    "month": "11",
-    "ramo_decoded": "Vida",
-    "pr_total": 7158.88,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "12",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 505480.05,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 9089.206,
-    "pr_liquido": 505331.91000000003
-  },
-  {
-    "year": "2025",
+    "year": "2026",
     "month": "12",
     "ramo_decoded": "Condomínio",
-    "pr_total": 12723.35,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "12",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 22000.97,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2025",
-    "month": "12",
-    "ramo_decoded": "Fiança",
-    "pr_total": 156383.57,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 8059.254,
-    "pr_liquido": 145635.67
-  },
-  {
-    "year": "2025",
-    "month": "12",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 168298.83,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 48343.95,
-    "pr_liquido": 156153.24
-  },
-  {
-    "year": "2025",
-    "month": "12",
-    "ramo_decoded": "Responsabilidade Civil",
-    "pr_total": 21350.45,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7472.6575,
-    "pr_liquido": 21350.45
-  },
-  {
-    "year": "2025",
-    "month": "12",
-    "ramo_decoded": "Vida",
-    "pr_total": 7124.7,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Automóvel",
-    "pr_total": 9897.51,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 92.42,
-    "pr_liquido": 9217.279999999999
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 325217.85,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 4640.94,
-    "pr_liquido": 325217.85
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Condomínio",
-    "pr_total": 15630.94,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 28864.42,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 3706.21,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 93.53,
-    "pr_liquido": 3451.5
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Fiança",
-    "pr_total": 167042.82,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 6949.27,
-    "pr_liquido": 155562.29
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 361730.51,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 97210.78,
-    "pr_liquido": 336614.54
-  },
-  {
-    "year": "2026",
-    "month": "01",
-    "ramo_decoded": "Vida",
-    "pr_total": 15371.43,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1222.12,
-    "pr_liquido": 8147.42
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 418088.98,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 7524.776,
-    "pr_liquido": 418088.98
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Condomínio",
-    "pr_total": 13461.55,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Conteúdo",
-    "pr_total": 24801.07,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Empresarial",
-    "pr_total": 3948.3799999999997,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 11.602500000000006,
-    "pr_liquido": 3668.8799999999997
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Fiança",
-    "pr_total": 196588.21,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 12638.0275,
-    "pr_liquido": 183077.14
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 345492.82,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 108255.555,
-    "pr_liquido": 321712.0
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Residencial",
-    "pr_total": 415.79,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 2.709,
-    "pr_liquido": 387.21
-  },
-  {
-    "year": "2026",
-    "month": "02",
-    "ramo_decoded": "Vida",
-    "pr_total": 10537.65,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 501.065,
-    "pr_liquido": 3340.43
-  },
-  {
-    "year": "2026",
-    "month": "03",
-    "ramo_decoded": "Capitalização",
-    "pr_total": 69316.98,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 934.5910000000001,
-    "pr_liquido": 69316.98
-  },
-  {
-    "year": "2026",
-    "month": "03",
-    "ramo_decoded": "Fiança",
-    "pr_total": 68239.94,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 1275.071,
-    "pr_liquido": 62784.189999999995
-  },
-  {
-    "year": "2026",
-    "month": "03",
-    "ramo_decoded": "Imobiliário",
-    "pr_total": 348176.93,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 106231.56,
-    "pr_liquido": 323745.86
-  },
-  {
-    "year": "2026",
-    "month": "03",
-    "ramo_decoded": "Vida",
-    "pr_total": 0.0,
-    "vl_com_corretora": 0.0,
-    "valor_repasse": 0.0,
-    "pr_liquido": 0.0
+    "pr_total": 2484.85,
+    "vl_com_corretora": 370.25,
+    "valor_repasse": 185.13,
+    "pr_liquido": 2314.07
   }
 ]
