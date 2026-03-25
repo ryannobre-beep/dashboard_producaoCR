@@ -156,6 +156,11 @@ try:
     # Fill numeric NaNs
     for c in ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']:
         df_flat[c] = pd.to_numeric(df_flat[c], errors='coerce').fillna(0.0)
+
+    # Fill all other NaNs with empty string to prevent invalid JSON
+    for c in df_flat.columns:
+        if c not in ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']:
+            df_flat[c] = df_flat[c].fillna('').astype(str).replace('nan', '')
     
     df_flat = df_flat.sort_values(by=['year', 'month'])
     records = df_flat.to_dict(orient='records')
