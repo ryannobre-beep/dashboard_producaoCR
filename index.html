@@ -68,6 +68,14 @@
                 </div>
             </header>
 
+            <!-- Product Pills Container for Visão Geral -->
+            <div class="overview-filters" id="overview-filters-container" style="margin-bottom: 24px;">
+                <span class="filter-label" style="font-size: 13px; font-weight: 600; color: var(--text-muted); margin-bottom: 8px; display: block;">Analisar Produtos:</span>
+                <div class="pill-group" id="product-pills" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    <!-- Populated dynamically via app.js -->
+                </div>
+            </div>
+
             <div class="kpi-grid">
                 <div class="kpi-card highlight">
                     <div class="kpi-icon">
@@ -117,6 +125,15 @@
                     <h3>Composição Mensal de Produtos (Core)</h3>
                     <div class="chart-container" style="min-height: 380px;">
                         <canvas id="stackedChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Area Chart Comparing Premium vs Rebate -->
+            <div class="analytics-row" id="area-chart-row">
+                <div class="chart-box main-time-box">
+                    <h3>Comparativo de Volume: Prêmio Total vs Rebate (Comissão CRM)</h3>
+                    <div class="chart-container" style="min-height: 380px;">
+                        <canvas id="areaChart"></canvas>
                     </div>
                 </div>
             </div>

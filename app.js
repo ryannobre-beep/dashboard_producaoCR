@@ -40,6 +40,9 @@ let mainChartObj = null;
 let stackedChartObj = null;
 let compositionChartObj = null;
 let performanceChartObj = null;
+let areaChartObj = null;
+
+let selectedOverviewBranches = [];
 
 const formatCurrency = (value) => {
     return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(value);
@@ -70,6 +73,12 @@ async function initDashboard() {
         
         // Build distinct month keys
         rebuildMonthKeys();
+        
+        // Initial selected branches
+        const uniqueBranches = new Set(rawData.map(d => d.ramo_decoded));
+        uniqueBranches.delete('Meta');
+        uniqueBranches.delete('Geral');
+        selectedOverviewBranches = Array.from(uniqueBranches);
         
         setupFilters();
         setupTabs();
@@ -107,6 +116,45 @@ function setupFilters() {
     const endSelect = document.getElementById('filter-end-month');
     const metricSelect = document.getElementById('filter-metric');
     const sourceSelect = document.getElementById('filter-date-source');
+
+    function setupProductFilters() {
+        const container = document.getElementById('product-pills');
+        if (!container) return;
+        container.innerHTML = '';
+        
+        const uniqueBranches = new Set(rawData.map(d => d.ramo_decoded));
+        uniqueBranches.delete('Meta');
+        uniqueBranches.delete('Geral');
+        const branchesToRender = Array.from(uniqueBranches).sort();
+        
+        branchesToRender.forEach(b => {
+            const pill = document.createElement('div');
+            pill.className = 'product-pill' + (selectedOverviewBranches.includes(b) ? ' active' : '');
+            pill.innerText = b;
+            
+            if (selectedOverviewBranches.includes(b)) {
+                pill.style.backgroundColor = branchColors[b] || branchColors['Outros'];
+                pill.style.borderColor = branchColors[b] || branchColors['Outros'];
+            }
+            
+            pill.addEventListener('click', () => {
+                if (selectedOverviewBranches.includes(b)) {
+                    selectedOverviewBranches = selectedOverviewBranches.filter(x => x !== b);
+                    pill.classList.remove('active');
+                    pill.style.backgroundColor = '';
+                    pill.style.borderColor = '';
+                } else {
+                    selectedOverviewBranches.push(b);
+                    pill.classList.add('active');
+                    pill.style.backgroundColor = branchColors[b] || branchColors['Outros'];
+                    pill.style.borderColor = branchColors[b] || branchColors['Outros'];
+                }
+                updateDashboard();
+            });
+            container.appendChild(pill);
+        });
+    }
+    setupProductFilters();
     
     function populateDateDropdowns() {
         startSelect.innerHTML = '';
@@ -206,6 +254,8 @@ function updateDashboard() {
     
     if (currentTab !== 'Geral') {
         filtered = filtered.filter(d => d.ramo_decoded === currentTab);
+    } else {
+        filtered = filtered.filter(d => selectedOverviewBranches.includes(d.ramo_decoded));
     }
     
     // 2. Aggregate Data
@@ -236,12 +286,20 @@ function updateDashboard() {
     
     // Render Stacked Chart only on Geral
     const stackedRow = document.getElementById('stacked-chart-row');
-    if (stackedRow) {
+    const areaRow = document.getElementById('area-chart-row');
+    const customFilters = document.getElementById('overview-filters-container');
+    
+    if (stackedRow && areaRow) {
         if (currentTab === 'Geral') {
             stackedRow.style.display = 'block';
+            areaRow.style.display = 'block';
+            if(customFilters) customFilters.style.display = 'block';
             renderStackedChart(sortedTimeKeys, filtered);
+            renderAreaChart(sortedTimeKeys, filtered);
         } else {
             stackedRow.style.display = 'none';
+            areaRow.style.display = 'none';
+            if(customFilters) customFilters.style.display = 'none';
         }
     }
     
@@ -536,6 +594,70 @@ function renderPerformanceChart(filteredData) {
             }
         });
     }
+}
+
+function renderAreaChart(keys, filteredData) {
+    const canvas = document.getElementById('areaChart');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (areaChartObj) areaChartObj.destroy();
+    
+    const premiumData = [];
+    const rebateData = [];
+    const labels = keys.map(formatMonthKey);
+    
+    keys.forEach(k => {
+        let p = 0; let r = 0;
+        filteredData.forEach(d => {
+            const dk = dateSource === 'proposta' ? `${d.year}-${d.month}` : `${d.vig_year}-${d.vig_month}`;
+            if (dk === k) {
+                p += d.pr_total;
+                r += d.valor_repasse;
+            }
+        });
+        premiumData.push(p);
+        rebateData.push(r);
+    });
+    
+    areaChartObj = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Premium Total',
+                    data: premiumData,
+                    borderColor: '#2D7C9D', // Clean Blue
+                    backgroundColor: 'rgba(45, 124, 157, 0.4)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 3
+                },
+                {
+                    label: 'Comissão / Rebate',
+                    data: rebateData,
+                    borderColor: '#E67E22', // Tertiary Palette
+                    backgroundColor: 'rgba(230, 126, 34, 0.6)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+                legend: { position: 'top', labels: { usePointStyle: true, boxWidth: 8, font: { family: "'Inter', sans-serif" } } },
+                tooltip: { callbacks: { label: c => ` ${c.dataset.label}: ${formatCurrency(c.raw)}` } }
+            },
+            scales: {
+                x: { grid: { display: false, drawBorder: true } },
+                y: { stacked: false, grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } }
+            }
+        }
+    });
 }
 
 initDashboard();
