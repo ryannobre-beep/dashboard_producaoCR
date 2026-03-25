@@ -381,7 +381,7 @@ function renderStackedChart(keys, filteredData) {
             },
             scales: {
                 x: { stacked: true, grid: { display: false, drawBorder: true } },
-                y: { stacked: true, grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } }
+                y: { stacked: true, beginAtZero: true, min: 0, grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } }
             }
         }
     });
@@ -536,7 +536,7 @@ function renderMainChart(keys, timeAgg, filteredData) {
             },
             plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => formatCurrency(c.raw) } } },
             scales: {
-                y: { grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } },
+                y: { beginAtZero: true, min: 0, grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } },
                 x: { grid: { display: false, drawBorder: true } }
             }
         }
@@ -643,7 +643,7 @@ function renderPerformanceChart(filteredData) {
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => formatCurrency(c.raw) } } },
                 scales: {
-                    x: { grid: { color: '#E2E8F0' }, border: {display:false}, ticks: { callback: v => formatCurrencyK(v) } },
+                    x: { beginAtZero: true, min: 0, grid: { color: '#E2E8F0' }, border: {display:false}, ticks: { callback: v => formatCurrencyK(v) } },
                     y: { grid: { display: false } }
                 }
             }
@@ -699,7 +699,7 @@ function renderPerformanceChart(filteredData) {
                     tooltip: { callbacks: { label: c => ` ${c.dataset.label}: ${formatCurrency(c.raw)}` } }
                 },
                 scales: {
-                    y: { grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } },
+                    y: { beginAtZero: true, min: 0, grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } },
                     x: { grid: { display: false, drawBorder: true } }
                 }
             }
@@ -776,7 +776,7 @@ function renderAreaChart(keys, filteredData) {
             },
             scales: {
                 x: { grid: { display: false, drawBorder: true } },
-                y: { stacked: false, grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } }
+                y: { stacked: false, beginAtZero: true, min: 0, grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } }
             }
         }
     });

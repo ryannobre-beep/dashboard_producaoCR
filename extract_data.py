@@ -153,6 +153,16 @@ try:
     if not supp_df.empty:
         df_flat = pd.concat([df_flat, supp_df], ignore_index=True)
     
+    # 2b. Remove duplicate Capitalização records from Jan/2023
+    #     (same cliente + same pr_liquido = duplicate entry)
+    cap_jan23_mask = (df_flat['year'] == '2023') & (df_flat['month'] == '01') & \
+                     (df_flat['ramo_decoded'].str.contains('Capital', case=False, na=False))
+    cap_jan23 = df_flat[cap_jan23_mask]
+    cap_jan23_deduped = cap_jan23.drop_duplicates(subset=['cliente', 'pr_liquido'], keep='first')
+    removed = len(cap_jan23) - len(cap_jan23_deduped)
+    df_flat = pd.concat([df_flat[~cap_jan23_mask], cap_jan23_deduped], ignore_index=True)
+    print(f"Removed {removed} duplicate Capitalização records from Jan/2023.")
+
     # Fill numeric NaNs
     for c in ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']:
         df_flat[c] = pd.to_numeric(df_flat[c], errors='coerce').fillna(0.0)
