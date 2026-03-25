@@ -6,7 +6,7 @@
     <title>Dashboard Analítico CR | Lado Bom</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
     
@@ -152,17 +152,17 @@
                     <table id="drilldown-table">
                         <thead>
                             <tr>
-                                <th>NNº</th>
-                                <th>Seg.</th>
-                                <th>Ramo</th>
-                                <th>Cliente</th>
-                                <th>CPF/CNPJ</th>
-                                <th>Nº Apólice</th>
-                                <th>Nº Renov.</th>
-                                <th>Dt. Proposta</th>
-                                <th>Pr. Líquido</th>
-                                <th>Vl. Com.</th>
-                                <th>Repasse</th>
+                                <th>NNº<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Seg.<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Ramo<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Cliente<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>CPF/CNPJ<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Nº Apólice<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Nº Renov.<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Dt. Proposta<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Pr. Líquido<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Vl. Com.<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
+                                <th>Repasse<br><input type="text" class="table-filter" placeholder="Buscar..."></th>
                             </tr>
                         </thead>
                         <tbody id="drilldown-table-body">
@@ -173,5 +173,7 @@
             </div>
         </div>
     </div>
+
+    <script src="app.js?v=3"></script>
 </body>
 </html>

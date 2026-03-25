@@ -387,17 +387,13 @@ function renderStackedChart(keys, filteredData) {
     });
 }
 
-function openDrilldownModal(title, drillData) {
-    document.getElementById('drilldown-title').innerText = `Detalhamento: ${title} (${drillData.length} registros)`;
+let currentDrillData = [];
+
+function renderDrilldownTable(dataArray) {
     const tbody = document.getElementById('drilldown-table-body');
     tbody.innerHTML = '';
     
-    // Process and sort highest to lowest metric
-    drillData.sort((a,b) => b[currentMetric] - a[currentMetric]);
-    
-    // Prevent DOM overload if too many rows, though 15k is technically fine, 
-    // let's cap at 5000 just in case. They usually won't click a block with >5000 rows.
-    const renderLimit = Math.min(drillData.length, 5000);
+    const renderLimit = Math.min(dataArray.length, 5000);
     
     const renderDate = (dstr) => {
         if (!dstr || dstr === 'nan' || dstr === 'NaT' || dstr === 'undefined') return '-';
@@ -412,7 +408,7 @@ function openDrilldownModal(title, drillData) {
 
     let html = '';
     for (let i = 0; i < renderLimit; i++) {
-        const d = drillData[i];
+        const d = dataArray[i];
         html += `
             <tr>
                 <td>${safeStr(d.nno)}</td>
@@ -430,6 +426,62 @@ function openDrilldownModal(title, drillData) {
         `;
     }
     tbody.innerHTML = html;
+}
+
+function applyDrilldownFilters() {
+    const inputs = Array.from(document.querySelectorAll('#drilldown-table thead .table-filter'));
+    const terms = inputs.map(inp => inp.value.trim().toLowerCase());
+    
+    // If all empty, just render normal
+    if (terms.every(t => t === '')) {
+        renderDrilldownTable(currentDrillData);
+        return;
+    }
+
+    const filtered = currentDrillData.filter(d => {
+        const renderDate = (dstr) => (!dstr || dstr === 'nan') ? '-' : (dstr.includes(' ') ? dstr.split(' ')[0] : dstr);
+        
+        const rowValues = [
+            (d.nno || '').toString(),
+            (d.seg || '').toString(),
+            (d.ramo_decoded || '').toString(),
+            (d.cliente || '').toString(),
+            (d.cpf_cnpj || '').toString(),
+            (d.no_apolice || '').toString(),
+            (d.no_renovacao || '').toString(),
+            renderDate(d.dt_proposta),
+            formatCurrency(d.pr_liquido),
+            formatCurrency(d.vl_com_corretora),
+            formatCurrency(d.valor_repasse)
+        ];
+
+        return rowValues.every((val, i) => {
+            if (!terms[i]) return true;
+            return val.toLowerCase().includes(terms[i]);
+        });
+    });
+
+    renderDrilldownTable(filtered);
+}
+
+// Attach event listeners to all filter inputs
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('#drilldown-table thead .table-filter').forEach(inp => {
+        inp.addEventListener('input', applyDrilldownFilters);
+    });
+});
+
+function openDrilldownModal(title, drillData) {
+    document.getElementById('drilldown-title').innerText = `Detalhamento: ${title}`;
+    
+    // Process and sort highest to lowest metric
+    drillData.sort((a,b) => b[currentMetric] - a[currentMetric]);
+    currentDrillData = drillData;
+
+    // Reset filters
+    document.querySelectorAll('#drilldown-table thead .table-filter').forEach(inp => inp.value = '');
+    
+    renderDrilldownTable(currentDrillData);
     document.getElementById('drilldown-modal').style.display = 'flex';
 }
 
