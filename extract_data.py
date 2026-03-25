@@ -82,9 +82,16 @@ def get_supplementary_data():
         # Add missing columns
         melted['vl_com_corretora'] = 0.0
         melted['valor_repasse'] = 0.0
-        melted['pr_liquido'] = 0.0
+        melted['pr_liquido'] = melted['pr_total'] # Fallback
+        melted['nno'] = ''
+        melted['seg'] = ''
+        melted['cliente'] = 'DADO SUPLEMENTAR'
+        melted['cpf_cnpj'] = ''
+        melted['no_apolice'] = ''
+        melted['no_renovacao'] = ''
+        melted['dt_proposta'] = ''
         
-        return melted[['year', 'month', 'vig_year', 'vig_month', 'ramo_decoded', 'pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']]
+        return melted[['year', 'month', 'vig_year', 'vig_month', 'ramo_decoded', 'pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido', 'nno', 'seg', 'cliente', 'cpf_cnpj', 'no_apolice', 'no_renovacao', 'dt_proposta']]
     except Exception as e:
         print("Could not load supplementary data:", e)
         return pd.DataFrame()
@@ -126,27 +133,32 @@ try:
     df = df[(df['year'] >= '2020') & (df['year'] <= '2026')]
     df = df[df['date_base'] <= pd.Timestamp('2026-02-28')]
     
+    # Ensure core mapping
     df['ramo_decoded'] = df['ramo'].map(branch_mapping_main).fillna(df['ramo'])
     
+    cols_to_keep = ['year', 'month', 'vig_year', 'vig_month', 'ramo_decoded', 'pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido', 'nno', 'seg', 'cliente', 'cpf_cnpj', 'no_apolice', 'no_renovacao', 'dt_proposta']
+    
+    # Fill missing strings
+    str_cols = ['nno', 'seg', 'cliente', 'cpf_cnpj', 'no_apolice', 'no_renovacao', 'dt_proposta']
+    for c in str_cols:
+        if c not in df.columns:
+            df[c] = ''
+        else:
+            df[c] = df[c].fillna('').astype(str)
+
+    df_flat = df[cols_to_keep].copy()
+
     # 2. Append Supplementary Data
     supp_df = get_supplementary_data()
     if not supp_df.empty:
-        df = pd.concat([df, supp_df], ignore_index=True)
+        df_flat = pd.concat([df_flat, supp_df], ignore_index=True)
     
-    # 3. Group and Export
-    grouped = df.groupby(['year', 'month', 'vig_year', 'vig_month', 'ramo_decoded'])[
-        ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']
-    ].sum().reset_index()
+    # Fill numeric NaNs
+    for c in ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']:
+        df_flat[c] = pd.to_numeric(df_flat[c], errors='coerce').fillna(0.0)
     
-    grouped = grouped.sort_values(by=['year', 'month'])
-
-    records = grouped.to_dict(orient='records')
-
-    for r in records:
-        r['pr_total'] = float(r['pr_total'])
-        r['vl_com_corretora'] = float(r['vl_com_corretora'])
-        r['valor_repasse'] = float(r['valor_repasse'])
-        r['pr_liquido'] = float(r['pr_liquido'])
+    df_flat = df_flat.sort_values(by=['year', 'month'])
+    records = df_flat.to_dict(orient='records')
 
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(records, f, ensure_ascii=False, indent=2)

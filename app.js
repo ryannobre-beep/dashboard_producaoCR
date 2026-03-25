@@ -21,7 +21,7 @@ Chart.defaults.font.family = "'Inter', sans-serif";
 
 let rawData = [];
 let currentTab = 'Geral';
-let currentMetric = 'pr_total';
+let currentMetric = 'pr_liquido';
 let dateSource = 'proposta';
 let startMonthKey = null;
 let endMonthKey = null;
@@ -262,9 +262,9 @@ function updateDashboard() {
     });
     
     document.getElementById('kpi-total').innerText = formatCurrency(totalMetricValue);
-    const avgStr = sortedTimeKeys.length ? formatCurrency(totalMetricValue / sortedTimeKeys.length) : 'R$ 0';
+    
     // Render Main Line/Bar Chart (Always)
-    renderMainChart(sortedTimeKeys, timeAgg);
+    renderMainChart(sortedTimeKeys, timeAgg, filtered);
     
     // Render Stacked Chart only on Geral
     const stackedRow = document.getElementById('stacked-chart-row');
@@ -351,6 +351,22 @@ function renderStackedChart(keys, filteredData) {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            onClick: (e, activeElements) => {
+                if (activeElements.length > 0) {
+                    const dsIdx = activeElements[0].datasetIndex;
+                    const idx = activeElements[0].index;
+                    const clickedKey = keys[idx];
+                    const clickedBranch = datasets[dsIdx].label;
+                    const drillData = filteredData.filter(d => {
+                        const k = dateSource === 'proposta' ? `${d.year}-${d.month}` : `${d.vig_year}-${d.vig_month}`;
+                        let b = d.ramo_decoded;
+                        const coreBranches = ['Vida', 'Condomínio', 'Capitalização', 'Fiança', 'Imobiliário', 'Conteúdo'];
+                        if (!coreBranches.includes(b)) b = 'Ramos Elementares';
+                        return k === clickedKey && b === clickedBranch;
+                    });
+                    openDrilldownModal(`${formatMonthKey(clickedKey)} - ${clickedBranch}`, drillData);
+                }
+            },
             plugins: { 
                 legend: { 
                     display: true, 
@@ -371,7 +387,57 @@ function renderStackedChart(keys, filteredData) {
     });
 }
 
-function renderMainChart(keys, timeAgg) {
+function openDrilldownModal(title, drillData) {
+    document.getElementById('drilldown-title').innerText = `Detalhamento: ${title} (${drillData.length} registros)`;
+    const tbody = document.getElementById('drilldown-table-body');
+    tbody.innerHTML = '';
+    
+    // Process and sort highest to lowest metric
+    drillData.sort((a,b) => b[currentMetric] - a[currentMetric]);
+    
+    // Prevent DOM overload if too many rows, though 15k is technically fine, 
+    // let's cap at 5000 just in case. They usually won't click a block with >5000 rows.
+    const renderLimit = Math.min(drillData.length, 5000);
+    
+    const renderDate = (dstr) => {
+        if (!dstr || dstr === 'nan' || dstr === 'NaT' || dstr === 'undefined') return '-';
+        if (dstr.includes(' ')) return dstr.split(' ')[0];
+        return dstr;
+    };
+    
+    const safeStr = (str) => {
+        if (!str || str === 'nan' || str === 'NaN' || str === 'undefined' || str === 'None') return '-';
+        return str;
+    };
+
+    let html = '';
+    for (let i = 0; i < renderLimit; i++) {
+        const d = drillData[i];
+        html += `
+            <tr>
+                <td>${safeStr(d.nno)}</td>
+                <td>${safeStr(d.seg)}</td>
+                <td><span class="product-pill" style="font-size:11px; padding:2px 8px; border:1px solid var(--border-color);">${safeStr(d.ramo_decoded)}</span></td>
+                <td><div style="max-width:200px; overflow:hidden; text-overflow:ellipsis;" title="${safeStr(d.cliente)}">${safeStr(d.cliente)}</div></td>
+                <td>${safeStr(d.cpf_cnpj)}</td>
+                <td>${safeStr(d.no_apolice)}</td>
+                <td>${safeStr(d.no_renovacao)}</td>
+                <td>${renderDate(d.dt_proposta)}</td>
+                <td style="font-weight:600;">${formatCurrency(d.pr_liquido)}</td>
+                <td style="color:#E67E22;">${formatCurrency(d.vl_com_corretora)}</td>
+                <td style="color:#502896;">${formatCurrency(d.valor_repasse)}</td>
+            </tr>
+        `;
+    }
+    tbody.innerHTML = html;
+    document.getElementById('drilldown-modal').style.display = 'flex';
+}
+
+function closeDrilldown() {
+    document.getElementById('drilldown-modal').style.display = 'none';
+}
+
+function renderMainChart(keys, timeAgg, filteredData) {
     const ctx = document.getElementById('mainChart').getContext('2d');
     if (mainChartObj) mainChartObj.destroy();
     
@@ -390,7 +456,7 @@ function renderMainChart(keys, timeAgg) {
         data: {
             labels: labels,
             datasets: [{
-                label: metricNames[currentMetric],
+                label: metricNames[currentMetric] || 'Valor',
                 data: dataPoints,
                 borderColor: activeColor,
                 backgroundColor: isGeral ? gradient : activeColor,
@@ -405,6 +471,17 @@ function renderMainChart(keys, timeAgg) {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            onClick: (e, activeElements) => {
+                if (activeElements.length > 0) {
+                    const idx = activeElements[0].index;
+                    const clickedKey = keys[idx];
+                    const drillData = filteredData.filter(d => {
+                        const k = dateSource === 'proposta' ? `${d.year}-${d.month}` : `${d.vig_year}-${d.vig_month}`;
+                        return k === clickedKey;
+                    });
+                    openDrilldownModal(`${formatMonthKey(clickedKey)} (${currentTab})`, drillData);
+                }
+            },
             plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => formatCurrency(c.raw) } } },
             scales: {
                 y: { grid: { color: '#E2E8F0', drawBorder: false }, border: { display: false }, ticks: { callback: v => formatCurrencyK(v) } },
@@ -630,6 +707,17 @@ function renderAreaChart(keys, filteredData) {
             responsive: true,
             maintainAspectRatio: false,
             interaction: { mode: 'index', intersect: false },
+            onClick: (e, activeElements) => {
+                if (activeElements.length > 0) {
+                    const idx = activeElements[0].index;
+                    const clickedKey = keys[idx];
+                    const drillData = filteredData.filter(d => {
+                        const k = dateSource === 'proposta' ? `${d.year}-${d.month}` : `${d.vig_year}-${d.vig_month}`;
+                        return k === clickedKey;
+                    });
+                    openDrilldownModal(`${formatMonthKey(clickedKey)} (Volume Total)`, drillData);
+                }
+            },
             plugins: {
                 legend: { position: 'top', labels: { usePointStyle: true, boxWidth: 8, font: { family: "'Inter', sans-serif" } } },
                 tooltip: { callbacks: { label: c => ` ${c.dataset.label}: ${formatCurrency(c.raw)}` } }

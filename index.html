@@ -60,7 +60,8 @@
                     <div class="filter-group">
                         <label for="filter-metric">Métrica</label>
                         <select id="filter-metric" class="premium-select">
-                            <option value="pr_total" selected>Prêmio Total</option>
+                            <option value="pr_liquido" selected>Prêmio Líquido</option>
+                            <option value="pr_total">Prêmio Bruto</option>
                             <option value="vl_com_corretora">Comissão</option>
                             <option value="valor_repasse">Repasse</option>
                         </select>
@@ -84,26 +85,6 @@
                     <div class="kpi-data">
                         <p class="kpi-label">Fechamento Acumulado</p>
                         <h2 id="kpi-total">R$ 0</h2>
-                    </div>
-                </div>
-                
-                <div class="kpi-card">
-                    <div class="kpi-icon">
-                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                    </div>
-                    <div class="kpi-data">
-                        <p class="kpi-label">Média do Período</p>
-                        <h2 id="kpi-avg">R$ 0</h2>
-                    </div>
-                </div>
-
-                <div class="kpi-card">
-                    <div class="kpi-icon">
-                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
-                    </div>
-                    <div class="kpi-data">
-                        <p class="kpi-label">Pico de Faturamento</p>
-                        <h2 id="kpi-best-month">-</h2>
                     </div>
                 </div>
             </div>
@@ -158,5 +139,39 @@
     </div>
 
     <script src="app.js"></script>
+
+    <!-- Drill-Down Modal -->
+    <div id="drilldown-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="drilldown-title">Detalhamento</h2>
+                <button class="modal-close" onclick="closeDrilldown()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="table-container">
+                    <table id="drilldown-table">
+                        <thead>
+                            <tr>
+                                <th>NNº</th>
+                                <th>Seg.</th>
+                                <th>Ramo</th>
+                                <th>Cliente</th>
+                                <th>CPF/CNPJ</th>
+                                <th>Nº Apólice</th>
+                                <th>Nº Renov.</th>
+                                <th>Dt. Proposta</th>
+                                <th>Pr. Líquido</th>
+                                <th>Vl. Com.</th>
+                                <th>Repasse</th>
+                            </tr>
+                        </thead>
+                        <tbody id="drilldown-table-body">
+                            <!-- Populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
