@@ -157,6 +157,32 @@ try:
     for c in ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']:
         df_flat[c] = pd.to_numeric(df_flat[c], errors='coerce').fillna(0.0)
 
+    # 3. Heal Missing Premiums
+    try:
+        aux1 = pd.read_excel('Dados 03:25.xlsx', engine='openpyxl')
+        aux2 = pd.read_excel('Dados 10:24.xlsx', engine='openpyxl')
+        aux_df = pd.concat([aux1, aux2], ignore_index=True)
+        
+        aux_df['nno'] = aux_df['NNº'].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+        aux_df['pr_liquido_aux'] = pd.to_numeric(aux_df['Pr. Líquido'], errors='coerce').fillna(0.0)
+        aux_df['pr_total_aux'] = pd.to_numeric(aux_df['Pr. Total'], errors='coerce').fillna(0.0)
+        
+        liq_dict = aux_df.groupby('nno')['pr_liquido_aux'].max().to_dict()
+        tot_dict = aux_df.groupby('nno')['pr_total_aux'].max().to_dict()
+        
+        df_flat['nno_clean'] = df_flat['nno'].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+        
+        mask_liq = (df_flat['pr_liquido'] == 0.0) & df_flat['nno_clean'].isin(liq_dict)
+        df_flat.loc[mask_liq, 'pr_liquido'] = df_flat.loc[mask_liq, 'nno_clean'].map(liq_dict)
+        
+        mask_tot = (df_flat['pr_total'] == 0.0) & df_flat['nno_clean'].isin(tot_dict)
+        df_flat.loc[mask_tot, 'pr_total'] = df_flat.loc[mask_tot, 'nno_clean'].map(tot_dict)
+        
+        df_flat = df_flat.drop(columns=['nno_clean'])
+        print(f"Healed missing premiums for {mask_liq.sum()} records.")
+    except Exception as e:
+        print("Could not process auxiliary premium files:", e)
+
     # Fill all other NaNs with empty string to prevent invalid JSON
     for c in df_flat.columns:
         if c not in ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']:
