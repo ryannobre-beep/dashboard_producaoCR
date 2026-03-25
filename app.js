@@ -31,6 +31,7 @@ Chart.defaults.font.family = "'Inter', sans-serif";
 let rawData = [];
 let currentTab = 'Geral';
 let currentMetric = 'pr_total';
+let dateSource = 'proposta';
 let startMonthKey = null;
 let endMonthKey = null;
 let allMonthKeys = []; // Array of "YYYY-MM"
@@ -68,13 +69,7 @@ async function initDashboard() {
         rawData = await response.json();
         
         // Build distinct month keys
-        const keysSet = new Set(rawData.map(d => `${d.year}-${d.month}`));
-        allMonthKeys = Array.from(keysSet).sort();
-        
-        if (allMonthKeys.length > 0) {
-            startMonthKey = allMonthKeys[0]; // Or default to something recent
-            endMonthKey = allMonthKeys[allMonthKeys.length - 1];
-        }
+        rebuildMonthKeys();
         
         setupFilters();
         setupTabs();
@@ -85,25 +80,61 @@ async function initDashboard() {
     }
 }
 
+function rebuildMonthKeys() {
+    const keysSet = new Set();
+    rawData.forEach(d => {
+        if (dateSource === 'proposta') {
+            keysSet.add(`${d.year}-${d.month}`);
+        } else {
+            keysSet.add(`${d.vig_year}-${d.vig_month}`);
+        }
+    });
+    allMonthKeys = Array.from(keysSet)
+        .filter(k => k && !k.includes('null') && !k.includes('undefined'))
+        .sort();
+        
+    if (allMonthKeys.length > 0) {
+        startMonthKey = allMonthKeys[0]; 
+        endMonthKey = allMonthKeys[allMonthKeys.length - 1];
+    } else {
+        startMonthKey = null;
+        endMonthKey = null;
+    }
+}
+
 function setupFilters() {
     const startSelect = document.getElementById('filter-start-month');
     const endSelect = document.getElementById('filter-end-month');
     const metricSelect = document.getElementById('filter-metric');
+    const sourceSelect = document.getElementById('filter-date-source');
     
-    allMonthKeys.forEach(k => {
-        const opt1 = document.createElement('option');
-        opt1.value = k;
-        opt1.text = formatMonthKey(k);
-        startSelect.appendChild(opt1);
+    function populateDateDropdowns() {
+        startSelect.innerHTML = '';
+        endSelect.innerHTML = '';
+        allMonthKeys.forEach(k => {
+            const opt1 = document.createElement('option');
+            opt1.value = k;
+            opt1.text = formatMonthKey(k);
+            startSelect.appendChild(opt1);
+            
+            const opt2 = document.createElement('option');
+            opt2.value = k;
+            opt2.text = formatMonthKey(k);
+            endSelect.appendChild(opt2);
+        });
         
-        const opt2 = document.createElement('option');
-        opt2.value = k;
-        opt2.text = formatMonthKey(k);
-        endSelect.appendChild(opt2);
-    });
+        if (startMonthKey) startSelect.value = startMonthKey;
+        if (endMonthKey) endSelect.value = endMonthKey;
+    }
     
-    startSelect.value = startMonthKey;
-    endSelect.value = endMonthKey;
+    populateDateDropdowns();
+    
+    sourceSelect.addEventListener('change', (e) => {
+        dateSource = e.target.value;
+        rebuildMonthKeys();
+        populateDateDropdowns();
+        updateDashboard();
+    });
     
     startSelect.addEventListener('change', (e) => {
         if (e.target.value > endMonthKey) {
@@ -165,9 +196,11 @@ function setupTabs() {
 }
 
 function updateDashboard() {
+    if (!startMonthKey || !endMonthKey) return;
+    
     // 1. Filter Data
     let filtered = rawData.filter(d => {
-        const k = `${d.year}-${d.month}`;
+        const k = dateSource === 'proposta' ? `${d.year}-${d.month}` : `${d.vig_year}-${d.vig_month}`;
         return k >= startMonthKey && k <= endMonthKey;
     });
     
@@ -180,7 +213,7 @@ function updateDashboard() {
     
     const timeAgg = {}; 
     filtered.forEach(d => {
-        const k = `${d.year}-${d.month}`;
+        const k = dateSource === 'proposta' ? `${d.year}-${d.month}` : `${d.vig_year}-${d.vig_month}`;
         if (!timeAgg[k]) timeAgg[k] = { value: 0 };
         timeAgg[k].value += d[currentMetric];
     });
@@ -236,7 +269,7 @@ function renderStackedChart(keys, filteredData) {
             branchData[branch] = {};
             keys.forEach(k => branchData[branch][k] = 0); // initialize all months
         }
-        const k = `${d.year}-${d.month}`;
+        const k = dateSource === 'proposta' ? `${d.year}-${d.month}` : `${d.vig_year}-${d.vig_month}`;
         if (branchData[branch][k] !== undefined) {
              branchData[branch][k] += d[currentMetric];
         }
@@ -450,12 +483,23 @@ function renderPerformanceChart(filteredData) {
         document.getElementById('rank-title').innerText = 'Comparativo Ano Contra Ano (YoY)';
         
         // Group by Year and Month
-        const years = [...new Set(filteredData.map(d => d.year))].sort();
+        let years;
+        if (dateSource === 'proposta') {
+            years = [...new Set(filteredData.map(d => d.year))].sort();
+        } else {
+            years = [...new Set(filteredData.map(d => d.vig_year))].sort();
+        }
         const months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
         
         const datasets = years.map((y, i) => {
             const dataP = months.map(m => {
-                const row = filteredData.find(d => d.year === y && d.month === m);
+                const row = filteredData.find(d => {
+                    if (dateSource === 'proposta') {
+                        return d.year === y && d.month === m;
+                    } else {
+                        return d.vig_year === y && d.vig_month === m;
+                    }
+                });
                 return row ? row[currentMetric] : 0;
             });
             

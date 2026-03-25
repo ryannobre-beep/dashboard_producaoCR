@@ -67,6 +67,10 @@ def get_supplementary_data():
         melted['month'] = [d[1] for d in dates]
         melted = melted.dropna(subset=['year', 'month'])
         
+        # Vigência for supplementary data is just the same as proposal
+        melted['vig_year'] = melted['year']
+        melted['vig_month'] = melted['month']
+        
         # Decode Branch
         melted['ramo_decoded'] = melted['Produto'].map(supp_mapping)
         melted = melted.dropna(subset=['ramo_decoded'])
@@ -80,7 +84,7 @@ def get_supplementary_data():
         melted['valor_repasse'] = 0.0
         melted['pr_liquido'] = 0.0
         
-        return melted[['year', 'month', 'ramo_decoded', 'pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']]
+        return melted[['year', 'month', 'vig_year', 'vig_month', 'ramo_decoded', 'pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']]
     except Exception as e:
         print("Could not load supplementary data:", e)
         return pd.DataFrame()
@@ -112,7 +116,26 @@ try:
     df['year'] = df['date_base'].dt.year.astype('Int64').astype(str)
     df['month'] = df['date_base'].dt.month.astype('Int64').astype(str).str.zfill(2)
     
-    df = df.dropna(subset=['year', 'month'])
+    # --- Parse Inicio de Vigencia ---
+    v_br = pd.to_datetime(df['inicio_de_vig'], format='%d/%m/%Y', errors='coerce')
+    v_us = pd.to_datetime(df['inicio_de_vig'], format='%m/%d/%Y', errors='coerce')
+    
+    diff_v_br = (v_br - inclusao).dt.days.abs()
+    diff_v_us = (v_us - inclusao).dt.days.abs()
+    
+    mask_v_us_better = (diff_v_br > 60) & (diff_v_us <= 60)
+    mask_v_br_nat_us_ok = v_br.isna() & ~v_us.isna()
+    
+    final_vig = np.where(mask_v_us_better | mask_v_br_nat_us_ok, v_us, v_br)
+    df['date_vig'] = pd.Series(final_vig, index=df.index)
+    
+    # Fallback to date_base if missing
+    df['date_vig'] = df['date_vig'].fillna(df['date_base'])
+    
+    df['vig_year'] = df['date_vig'].dt.year.astype('Int64').astype(str)
+    df['vig_month'] = df['date_vig'].dt.month.astype('Int64').astype(str).str.zfill(2)
+    
+    df = df.dropna(subset=['year', 'month', 'vig_year', 'vig_month'])
     df = df[(df['year'] >= '2020') & (df['year'] <= '2030')]
     
     df['ramo_decoded'] = df['ramo'].map(branch_mapping_main).fillna(df['ramo'])
@@ -123,7 +146,7 @@ try:
         df = pd.concat([df, supp_df], ignore_index=True)
     
     # 3. Group and Export
-    grouped = df.groupby(['year', 'month', 'ramo_decoded'])[
+    grouped = df.groupby(['year', 'month', 'vig_year', 'vig_month', 'ramo_decoded'])[
         ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']
     ].sum().reset_index()
     
