@@ -96,38 +96,23 @@ try:
     money_cols = ['pr_total', 'vl_com_corretora', 'valor_repasse', 'pr_liquido']
     for col in money_cols:
         if col in df.columns:
-            df[col] = df[col].astype(str).str.replace('R$', '', regex=False).str.replace('.', '', regex=False).str.replace(',', '.', regex=False)
+            df[col] = df[col].astype(str).str.replace('R$', '', regex=False)\
+                             .str.replace('.', '', regex=False)\
+                             .str.replace(',', '.', regex=False)\
+                             .str.replace(' ', '', regex=False)
             df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
 
-    s_br = pd.to_datetime(df['dt_proposta'], format='%d/%m/%Y', errors='coerce')
-    s_us = pd.to_datetime(df['dt_proposta'], format='%m/%d/%Y', errors='coerce')
-    inclusao = pd.to_datetime(df['dt_inclusao'], format='%d/%m/%Y', errors='coerce')
+    s_br = pd.to_datetime(df['dt_proposta'], errors='coerce', dayfirst=True)
+    inclusao = pd.to_datetime(df['dt_inclusao'], errors='coerce', dayfirst=True)
     
-    diff_br = (s_br - inclusao).dt.days.abs()
-    diff_us = (s_us - inclusao).dt.days.abs()
-    
-    mask_us_better = (diff_br > 60) & (diff_us <= 60)
-    mask_br_nat_us_ok = s_br.isna() & ~s_us.isna()
-    
-    final_proposta = np.where(mask_us_better | mask_br_nat_us_ok, s_us, s_br)
-    df['date_base'] = pd.Series(final_proposta, index=df.index)
-    df['date_base'] = df['date_base'].fillna(inclusao)
+    df['date_base'] = s_br.fillna(inclusao)
     
     df['year'] = df['date_base'].dt.year.astype('Int64').astype(str)
     df['month'] = df['date_base'].dt.month.astype('Int64').astype(str).str.zfill(2)
     
     # --- Parse Inicio de Vigencia ---
-    v_br = pd.to_datetime(df['inicio_de_vig'], format='%d/%m/%Y', errors='coerce')
-    v_us = pd.to_datetime(df['inicio_de_vig'], format='%m/%d/%Y', errors='coerce')
-    
-    diff_v_br = (v_br - inclusao).dt.days.abs()
-    diff_v_us = (v_us - inclusao).dt.days.abs()
-    
-    mask_v_us_better = (diff_v_br > 60) & (diff_v_us <= 60)
-    mask_v_br_nat_us_ok = v_br.isna() & ~v_us.isna()
-    
-    final_vig = np.where(mask_v_us_better | mask_v_br_nat_us_ok, v_us, v_br)
-    df['date_vig'] = pd.Series(final_vig, index=df.index)
+    v_br = pd.to_datetime(df['inicio_de_vig'], errors='coerce', dayfirst=True)
+    df['date_vig'] = v_br
     
     # Fallback to date_base if missing
     df['date_vig'] = df['date_vig'].fillna(df['date_base'])
@@ -136,7 +121,10 @@ try:
     df['vig_month'] = df['date_vig'].dt.month.astype('Int64').astype(str).str.zfill(2)
     
     df = df.dropna(subset=['year', 'month', 'vig_year', 'vig_month'])
-    df = df[(df['year'] >= '2020') & (df['year'] <= '2030')]
+    
+    # Hard bounds for dashboard limits based on user instructions
+    df = df[(df['year'] >= '2020') & (df['year'] <= '2026')]
+    df = df[df['date_base'] <= pd.Timestamp('2026-02-28')]
     
     df['ramo_decoded'] = df['ramo'].map(branch_mapping_main).fillna(df['ramo'])
     
