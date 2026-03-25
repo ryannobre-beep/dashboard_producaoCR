@@ -3,9 +3,9 @@ const branchColors = {
     'Conteúdo': '#6B6B6B',
     'Condomínio': '#2D7C9D',
     'Fiança': '#7C45CB',
-    'Capitalização': '#F57A00',
+    'Capitalização': '#E67E22', // Match Tertiary Palette
     'Imobiliário': '#5A3182',
-    'Geral': '#2563EB',
+    'Geral': '#502896',         // Match Primary Palette
     'Responsabilidade Civil': '#E11D48',
     'Automóvel': '#16A34A',
     'Garantias': '#D97706',
