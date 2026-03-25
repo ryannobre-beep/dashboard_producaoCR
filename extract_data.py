@@ -130,8 +130,7 @@ try:
     df = df.dropna(subset=['year', 'month', 'vig_year', 'vig_month'])
     
     # Hard bounds for dashboard limits based on user instructions
-    df = df[(df['year'] >= '2020') & (df['year'] <= '2026')]
-    df = df[df['date_base'] <= pd.Timestamp('2026-02-28')]
+    df = df[(df['date_base'] >= pd.Timestamp('2023-04-01')) & (df['date_base'] <= pd.Timestamp('2026-02-28'))]
     
     # Ensure core mapping
     df['ramo_decoded'] = df['ramo'].map(branch_mapping_main).fillna(df['ramo'])
