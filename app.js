@@ -3,19 +3,10 @@ const branchColors = {
     'Conteúdo': '#6B6B6B',
     'Condomínio': '#2D7C9D',
     'Fiança': '#7C45CB',
-    'Capitalização': '#E67E22', // Match Tertiary Palette
+    'Capitalização': '#E67E22', 
     'Imobiliário': '#5A3182',
-    'Geral': '#502896',         // Match Primary Palette
-    'Responsabilidade Civil': '#E11D48',
-    'Automóvel': '#16A34A',
-    'Garantias': '#D97706',
-    'Empresarial': '#4F46E5',
-    'Cyber': '#9333EA',
-    'Engenharia': '#059669',
-    'Equipamentos': '#CA8A04',
-    'Viagem': '#0891B2',
-    'Residencial': '#0D9488',
-    'Outros': '#94A3B8',
+    'Geral': '#502896',         
+    'Ramos Elementares': '#94A3B8',
     'Meta': '#475569'
 };
 
@@ -75,10 +66,8 @@ async function initDashboard() {
         rebuildMonthKeys();
         
         // Initial selected branches
-        const uniqueBranches = new Set(rawData.map(d => d.ramo_decoded));
-        uniqueBranches.delete('Meta');
-        uniqueBranches.delete('Geral');
-        selectedOverviewBranches = Array.from(uniqueBranches);
+        const filterCategories = ['Vida', 'Condomínio', 'Capitalização', 'Fiança', 'Imobiliário', 'Conteúdo', 'Ramos Elementares'];
+        selectedOverviewBranches = [...filterCategories];
         
         setupFilters();
         setupTabs();
@@ -122,32 +111,20 @@ function setupFilters() {
         if (!container) return;
         container.innerHTML = '';
         
-        const uniqueBranches = new Set(rawData.map(d => d.ramo_decoded));
-        uniqueBranches.delete('Meta');
-        uniqueBranches.delete('Geral');
-        const branchesToRender = Array.from(uniqueBranches).sort();
+        const filterCategories = ['Imobiliário', 'Fiança', 'Capitalização', 'Conteúdo', 'Condomínio', 'Vida', 'Ramos Elementares'];
         
-        branchesToRender.forEach(b => {
+        filterCategories.forEach(b => {
             const pill = document.createElement('div');
             pill.className = 'product-pill' + (selectedOverviewBranches.includes(b) ? ' active' : '');
             pill.innerText = b;
-            
-            if (selectedOverviewBranches.includes(b)) {
-                pill.style.backgroundColor = branchColors[b] || branchColors['Outros'];
-                pill.style.borderColor = branchColors[b] || branchColors['Outros'];
-            }
             
             pill.addEventListener('click', () => {
                 if (selectedOverviewBranches.includes(b)) {
                     selectedOverviewBranches = selectedOverviewBranches.filter(x => x !== b);
                     pill.classList.remove('active');
-                    pill.style.backgroundColor = '';
-                    pill.style.borderColor = '';
                 } else {
                     selectedOverviewBranches.push(b);
                     pill.classList.add('active');
-                    pill.style.backgroundColor = branchColors[b] || branchColors['Outros'];
-                    pill.style.borderColor = branchColors[b] || branchColors['Outros'];
                 }
                 updateDashboard();
             });
@@ -255,7 +232,12 @@ function updateDashboard() {
     if (currentTab !== 'Geral') {
         filtered = filtered.filter(d => d.ramo_decoded === currentTab);
     } else {
-        filtered = filtered.filter(d => selectedOverviewBranches.includes(d.ramo_decoded));
+        const coreBranches = ['Vida', 'Condomínio', 'Capitalização', 'Fiança', 'Imobiliário', 'Conteúdo'];
+        filtered = filtered.filter(d => {
+            let cat = d.ramo_decoded;
+            if (!coreBranches.includes(cat)) cat = 'Ramos Elementares';
+            return selectedOverviewBranches.includes(cat);
+        });
     }
     
     // 2. Aggregate Data
@@ -320,7 +302,7 @@ function renderStackedChart(keys, filteredData) {
     filteredData.forEach(d => {
         let branch = d.ramo_decoded;
         if (!coreBranches.includes(branch)) {
-            branch = 'Outros';
+            branch = 'Ramos Elementares';
         }
         
         if (!branchData[branch]) {
@@ -337,7 +319,7 @@ function renderStackedChart(keys, filteredData) {
         return {
             label: branch,
             data: keys.map(k => branchData[branch][k]),
-            backgroundColor: branchColors[branch] || branchColors['Outros'],
+            backgroundColor: branchColors[branch] || branchColors['Ramos Elementares'],
             borderWidth: 1.5,
             borderColor: '#FFFFFF',
             borderRadius: 4,
@@ -348,7 +330,7 @@ function renderStackedChart(keys, filteredData) {
     
     // Sort datasets so "Vida" is top, others follow a standard logic
     const orderScore = {
-        'Outros': 0,
+        'Ramos Elementares': 0,
         'Imobiliário': 1,
         'Capitalização': 2,
         'Fiança': 3,
@@ -443,26 +425,23 @@ function renderCompositionChart(filteredData, totalValue) {
     if (currentTab === 'Geral') {
         document.getElementById('comp-title').innerText = 'Composição por Ramo';
         const branchAgg = {};
+        const coreBranches = ['Vida', 'Condomínio', 'Capitalização', 'Fiança', 'Imobiliário', 'Conteúdo'];
+        
         filteredData.forEach(d => {
-            if (!branchAgg[d.ramo_decoded]) branchAgg[d.ramo_decoded] = 0;
-            branchAgg[d.ramo_decoded] += d[currentMetric];
+            let b = d.ramo_decoded;
+            if (!coreBranches.includes(b)) b = 'Ramos Elementares';
+            if (!branchAgg[b]) branchAgg[b] = 0;
+            branchAgg[b] += d[currentMetric];
         });
         const sortedBranches = Object.keys(branchAgg).sort((a,b) => branchAgg[b] - branchAgg[a]);
-        // Top 5 and others
-        const top5 = sortedBranches.slice(0, 5);
-        let others = 0;
-        sortedBranches.slice(5).forEach(b => others += branchAgg[b]);
         
-        top5.forEach(b => {
-            dLabels.push(b);
-            dData.push(branchAgg[b]);
-            dColors.push(branchColors[b] || branchColors['Outros']);
+        sortedBranches.forEach(b => {
+            if (branchAgg[b] > 0) {
+                dLabels.push(b);
+                dData.push(branchAgg[b]);
+                dColors.push(branchColors[b] || branchColors['Ramos Elementares']);
+            }
         });
-        if (others > 0) {
-            dLabels.push('Outros');
-            dData.push(others);
-            dColors.push(branchColors['Outros']);
-        }
     } else {
         document.getElementById('comp-title').innerText = 'Volume de Vendas (Prêmio vs Comissão)';
         let p = 0; let c = 0; let r = 0;
@@ -510,11 +489,14 @@ function renderPerformanceChart(filteredData) {
     if (currentTab === 'Geral') {
         document.getElementById('rank-title').innerText = 'Ranking de Ramos (Valor Bruto)';
         const branchAgg = {};
+        const coreBranches = ['Vida', 'Condomínio', 'Capitalização', 'Fiança', 'Imobiliário', 'Conteúdo'];
         filteredData.forEach(d => {
-            if (!branchAgg[d.ramo_decoded]) branchAgg[d.ramo_decoded] = 0;
-            branchAgg[d.ramo_decoded] += d[currentMetric];
+            let b = d.ramo_decoded;
+            if (!coreBranches.includes(b)) b = 'Ramos Elementares';
+            if (!branchAgg[b]) branchAgg[b] = 0;
+            branchAgg[b] += d[currentMetric];
         });
-        const sortedBranches = Object.keys(branchAgg).sort((a,b) => branchAgg[b] - branchAgg[a]).slice(0,8);
+        const sortedBranches = Object.keys(branchAgg).sort((a,b) => branchAgg[b] - branchAgg[a]);
         
         performanceChartObj = new Chart(ctx, {
             type: 'bar',
@@ -522,7 +504,7 @@ function renderPerformanceChart(filteredData) {
                 labels: sortedBranches,
                 datasets: [{
                     data: sortedBranches.map(b => branchAgg[b]),
-                    backgroundColor: sortedBranches.map(b => branchColors[b] || branchColors['Outros']),
+                    backgroundColor: sortedBranches.map(b => branchColors[b] || branchColors['Ramos Elementares']),
                     borderRadius: 4
                 }]
             },
